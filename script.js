@@ -1,8 +1,5 @@
 "use strict";
 // ==========================================
-// TYPES
-// ==========================================
-// ==========================================
 // DONNÉES DES CARTES (chargées depuis cards.json)
 // ==========================================
 let cards = null;
@@ -19,7 +16,7 @@ async function loadCards() {
 let currentMode = null;
 let currentDifficulty = 1;
 let usedCards = { truth: [], dare: [] };
-let chart = null; // instance Chart.js (typée any car la lib est chargée via CDN)
+let chart = null; // instance Chart.js
 // ==========================================
 // LOGIQUE DE JEU
 // ==========================================

@@ -11,8 +11,7 @@ midnight-revelations/
 ├── index.html      → structure de la page
 ├── styles.css       → styles custom (variables CSS, glassmorphism, slider...)
 ├── cards.json        → contenu des cartes (vérités & actions), séparé du code
-├── script.ts        → logique de l'application, en TypeScript typé
-├── script.js         → JS compilé depuis script.ts (exécuté par le navigateur)
+├── script.js         → logique de l'application (JavaScript)
 └── README.md         → ce fichier
 ```
 
@@ -58,15 +57,9 @@ Pour ajouter, modifier ou supprimer des cartes, il suffit d'éditer ce fichier J
 
 ⚠️ Le total de cartes (40 = 20 truth + 20 dare) est actuellement codé en dur dans `updateChart()` (`script.ts`) pour le calcul de la barre de progression. Si tu changes le nombre de cartes dans un paquet, pense à ajuster cette valeur (ou on peut la rendre dynamique — demande-le si besoin).
 
-## Modifier la logique (script.ts)
+## Modifier la logique (script.js)
 
-Le code est en TypeScript. Après toute modification de `script.ts`, il faut recompiler pour régénérer `script.js` :
-
-```bash
-tsc --target ES2017 --lib DOM,ES2017 script.ts
-```
-
-(nécessite `typescript` installé : `npm install -g typescript`)
+Le code est en JavaScript pur, directement modifiable et rechargeable dans le navigateur — aucune étape de compilation nécessaire.
 
 ## Fonctionnement général
 
