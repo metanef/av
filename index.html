@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Revelations - Action ou Vérité</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div id="app" class="w-full max-w-md h-[85vh] flex flex-col glass rounded-[2.5rem] overflow-hidden relative">
+
+        <!-- SECTION : ACCUEIL -->
+        <section id="view-home" class="flex-1 flex flex-col p-8 view-transition">
+            <header class="text-center mb-10">
+                <h1 class="text-4xl font-extrabold tracking-tighter mb-2 bg-gradient-to-br from-white to-gray-500 bg-clip-text text-transparent">MIDNIGHT</h1>
+                <p class="text-gray-400 text-sm font-medium">REVELATIONS</p>
+            </header>
+
+            <div class="space-y-6 flex-1 flex flex-col justify-center">
+                <p class="text-center text-gray-500 text-xs uppercase tracking-widest mb-4">Choisissez votre univers</p>
+
+                <button onclick="setMode('friends')" class="group relative w-full p-6 rounded-3xl bg-indigo-500/10 border border-indigo-500/20 hover:bg-indigo-500/20 transition-all text-left overflow-hidden">
+                    <div class="relative z-10">
+                        <i class="fa-solid fa-user-group text-indigo-400 text-2xl mb-3"></i>
+                        <h2 class="text-xl font-bold">Amis & Chill</h2>
+                        <p class="text-indigo-300/60 text-sm">Secrets, nostalgie et rires.</p>
+                    </div>
+                    <div class="absolute right-[-20px] bottom-[-20px] text-7xl text-indigo-500/5 rotate-12 transition-transform group-hover:scale-110">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                </button>
+
+                <div class="p-6 rounded-3xl bg-rose-500/10 border border-rose-500/20 space-y-4">
+                    <button onclick="setMode('hot')" class="group w-full text-left">
+                        <i class="fa-solid fa-fire text-rose-400 text-2xl mb-3"></i>
+                        <h2 class="text-xl font-bold">Sexy Hot</h2>
+                        <p class="text-rose-300/60 text-sm mb-4">Flirt, tension et audace.</p>
+                    </button>
+
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-[10px] uppercase font-bold tracking-tighter text-rose-400">
+                            <span id="label-soft">Soft</span>
+                            <span id="label-flirt">Flirt</span>
+                            <span id="label-hard">Hard</span>
+                        </div>
+                        <input type="range" id="diff-slider" min="1" max="3" value="1" oninput="updateDifficulty(this.value)">
+                    </div>
+                </div>
+            </div>
+
+            <footer class="mt-8 text-center">
+                <button id="btn-start" onclick="initGame()" class="hidden w-full py-4 bg-white text-black font-extrabold rounded-2xl hover:scale-105 transition-transform">
+                    COMMENCER
+                </button>
+            </footer>
+        </section>
+
+        <!-- SECTION : JEU -->
+        <section id="view-game" class="hidden flex-1 flex flex-col p-8 view-transition opacity-0">
+            <nav class="flex justify-between items-center mb-12">
+                <button onclick="goBack()" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <span id="mode-indicator" class="text-[10px] font-bold uppercase tracking-widest text-indigo-400 px-3 py-1 rounded-full border border-indigo-500/20">AMIS</span>
+                <button onclick="toggleStats()" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </button>
+            </nav>
+
+            <div id="choice-screen" class="flex-1 flex flex-col justify-center space-y-6">
+                <p class="text-center text-gray-400 text-sm mb-4">C'est ton tour...</p>
+                <button onclick="drawCard('truth')" class="w-full py-16 rounded-3xl border-2 border-dashed border-gray-800 hover:border-indigo-500/50 hover:bg-indigo-500/5 transition-all text-center group">
+                    <span class="block text-3xl font-black mb-2 group-hover:scale-110 transition-transform">VÉRITÉ</span>
+                    <span class="text-xs text-gray-500">Avoue tout</span>
+                </button>
+                <div class="flex items-center gap-4">
+                    <div class="h-px bg-gray-800 flex-1"></div>
+                    <span class="text-[10px] text-gray-600 font-bold">OU</span>
+                    <div class="h-px bg-gray-800 flex-1"></div>
+                </div>
+                <button onclick="drawCard('dare')" class="w-full py-16 rounded-3xl border-2 border-dashed border-gray-800 hover:border-rose-500/50 hover:bg-rose-500/5 transition-all text-center group">
+                    <span class="block text-3xl font-black mb-2 group-hover:scale-110 transition-transform">ACTION</span>
+                    <span class="text-xs text-gray-500">Relève le défi</span>
+                </button>
+            </div>
+
+            <!-- CARD REVEAL -->
+            <div id="reveal-screen" class="hidden flex-1 flex flex-col justify-center text-center opacity-0 transition-opacity duration-300">
+                <div class="p-8 rounded-3xl bg-white/5 border border-white/10 mb-8 min-h-[200px] flex items-center justify-center">
+                    <p id="card-text" class="text-xl font-semibold leading-relaxed"></p>
+                </div>
+                <button onclick="nextPlayer()" class="w-full py-4 bg-white text-black font-extrabold rounded-2xl">
+                    JOUEUR SUIVANT
+                </button>
+            </div>
+        </section>
+
+        <!-- SECTION : STATISTIQUES -->
+        <section id="view-stats" class="hidden flex-1 flex flex-col p-8 view-transition absolute inset-0 glass z-50">
+            <header class="flex justify-between items-center mb-10">
+                <h3 class="font-bold">PROGRÈS DU PAQUET</h3>
+                <button onclick="toggleStats()" class="text-2xl">&times;</button>
+            </header>
+
+            <div class="flex-1 flex flex-col items-center justify-center">
+                <div class="chart-container">
+                    <canvas id="deckChart"></canvas>
+                </div>
+                <div class="mt-8 text-center">
+                    <p id="stats-info" class="text-sm text-gray-400"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
