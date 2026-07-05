@@ -1,74 +1,91 @@
-# Midnight Revelations — Action ou Vérité
+# Midnight Revelations — Truth or Dare
 
-Application web (SPA en un seul écran) de jeu "Action ou Vérité" avec deux univers :
-- **Amis & Chill** : questions/défis légers
-- **Sexy Hot** : 3 niveaux de difficulté (Soft / Flirt / Hard), plus osés à chaque palier
+A single-screen web app for a "Truth or Dare" party game, available in **French and English**, with two modes:
+- **Friends & Chill**: light-hearted questions and dares
+- **Sexy Hot**: 3 difficulty levels (Soft / Flirt / Hard), getting bolder at each level
 
-## Structure du projet
+## Project structure
 
 ```
 midnight-revelations/
-├── index.html      → structure de la page
-├── styles.css       → styles custom (variables CSS, glassmorphism, slider...)
-├── cards.json        → contenu des cartes (vérités & actions), séparé du code
-├── script.js         → logique de l'application (JavaScript)
-└── README.md         → ce fichier
+├── index.html      → page structure
+├── styles.css       → custom styles (CSS variables, glassmorphism, slider...)
+├── cards.json        → card content (truths & dares) in FR and EN, separate from the code
+├── script.js         → application logic (JavaScript)
+└── README.md         → this file
 ```
 
-Dépendances externes chargées via CDN dans `index.html` :
-- [Tailwind CSS](https://tailwindcss.com/) (utilitaires de style)
-- [Chart.js](https://www.chartjs.org/) (graphique en donut de progression)
-- [Font Awesome](https://fontawesome.com/) (icônes)
-- Police Google Fonts "Plus Jakarta Sans"
+External dependencies loaded via CDN in `index.html`:
+- [Tailwind CSS](https://tailwindcss.com/) (styling utilities)
+- [Chart.js](https://www.chartjs.org/) (donut chart for deck progress)
+- [Font Awesome](https://fontawesome.com/) (icons)
+- Google Fonts "Plus Jakarta Sans"
 
-## Lancer le projet
+## Running the project
 
-⚠️ **Important** : `script.js` charge `cards.json` via `fetch()`. Les navigateurs bloquent `fetch()` sur des fichiers ouverts directement (`file://...`) pour des raisons de sécurité (CORS). Il faut donc servir les fichiers via un petit serveur local :
+⚠️ **Important**: `script.js` loads `cards.json` via `fetch()`. Browsers block `fetch()` on files opened directly (`file://...`) for security reasons (CORS). You need to serve the files through a small local server:
 
 ```bash
 cd midnight-revelations
 python3 -m http.server 8000
-# puis ouvrir http://localhost:8000 dans le navigateur
+# then open http://localhost:8000 in your browser
 ```
 
-Ou avec Node.js :
+Or with Node.js:
 
 ```bash
 npx serve .
 ```
 
-## Modifier le contenu des cartes
+## Language support
 
-Toutes les questions et défis sont dans **`cards.json`**, un simple objet avec 4 paquets :
+The app supports **French (default) and English**, switchable via the FR/EN buttons on the home screen.
+
+- All static UI text (buttons, labels, headers) is translated through a `translations` object in `script.js`.
+- All card content (truths and dares) is translated in `cards.json` under two top-level keys, `fr` and `en`.
+- The selected language only affects the current session (no persistence across page reloads).
+
+## Editing card content
+
+All questions and dares live in **`cards.json`**, structured by language, then by deck:
 
 ```json
 {
-  "friends": { "truth": [...], "dare": [...] },
-  "hot1":    { "truth": [...], "dare": [...] },
-  "hot2":    { "truth": [...], "dare": [...] },
-  "hot3":    { "truth": [...], "dare": [...] }
+  "fr": {
+    "friends": { "truth": [...], "dare": [...] },
+    "hot1":    { "truth": [...], "dare": [...] },
+    "hot2":    { "truth": [...], "dare": [...] },
+    "hot3":    { "truth": [...], "dare": [...] }
+  },
+  "en": {
+    "friends": { "truth": [...], "dare": [...] },
+    "hot1":    { "truth": [...], "dare": [...] },
+    "hot2":    { "truth": [...], "dare": [...] },
+    "hot3":    { "truth": [...], "dare": [...] }
+  }
 }
 ```
 
-- `friends` → mode "Amis & Chill"
-- `hot1` / `hot2` / `hot3` → mode "Sexy Hot", niveaux Soft / Flirt / Hard
+- `friends` → "Friends & Chill" mode
+- `hot1` / `hot2` / `hot3` → "Sexy Hot" mode, Soft / Flirt / Hard levels
 
-Pour ajouter, modifier ou supprimer des cartes, il suffit d'éditer ce fichier JSON — **aucune recompilation nécessaire**, il suffit de recharger la page dans le navigateur.
+To add, edit, or remove cards, just edit this JSON file — **no recompilation needed**, just reload the page in the browser. Keep the `fr` and `en` arrays the same length and in the same order if you want both languages to stay in sync (not strictly required, but keeps things tidy).
 
-⚠️ Le total de cartes (40 = 20 truth + 20 dare) est actuellement codé en dur dans `updateChart()` (`script.ts`) pour le calcul de la barre de progression. Si tu changes le nombre de cartes dans un paquet, pense à ajuster cette valeur (ou on peut la rendre dynamique — demande-le si besoin).
+⚠️ The total card count (40 = 20 truth + 20 dare) is currently hardcoded in `updateChart()` (`script.js`) for the progress bar calculation. If you change the number of cards in a deck, remember to adjust this value (or it could be made dynamic — just ask if needed).
 
-## Modifier la logique (script.js)
+## Editing the logic (script.js)
 
-Le code est en JavaScript pur, directement modifiable et rechargeable dans le navigateur — aucune étape de compilation nécessaire.
+The code is plain JavaScript, directly editable and reloadable in the browser — no build step required.
 
-## Fonctionnement général
+## How it works
 
-1. **Accueil** (`view-home`) : l'utilisateur choisit un mode (`setMode`) et, en mode Hot, un niveau de difficulté via le slider (`updateDifficulty`), puis lance la partie (`initGame`).
-2. **Jeu** (`view-game`) : à chaque tour, un joueur choisit Vérité ou Action (`drawCard`), la carte piochée s'affiche sans répétition tant que le paquet n'est pas épuisé, puis on passe au joueur suivant (`nextPlayer`).
-3. **Statistiques** (`view-stats`) : accessible depuis l'écran de jeu, affiche un donut chart (Chart.js) du nombre de cartes déjà vues sur le total.
+1. **Home screen** (`view-home`): the user picks a language (`setLang`), a mode (`setMode`) and, in Hot mode, a difficulty level via the slider (`updateDifficulty`), then starts the game (`initGame`).
+2. **Game screen** (`view-game`): each turn, a player picks Truth or Dare (`drawCard`); the drawn card is shown without repeats until the deck runs out, then the group moves to the next player (`nextPlayer`).
+3. **Stats screen** (`view-stats`): accessible from the game screen, shows a donut chart (Chart.js) of cards seen so far out of the total.
 
-## Limitations connues
+## Known limitations
 
-- Pas de sauvegarde de partie entre sessions (pas de `localStorage`)
-- `goBack()` recharge complètement la page (perte de la progression en cours)
-- Le total "40" dans les stats est fixe, pas calculé dynamiquement depuis `cards.json`
+- No save/persistence between sessions (no `localStorage`)
+- `goBack()` fully reloads the page (current progress is lost)
+- The "40" total in the stats is fixed, not dynamically computed from `cards.json`
+- Language choice isn't remembered between sessions

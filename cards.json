@@ -1,186 +1,38 @@
 {
-  "friends": {
-    "truth": [
-      "Ton plus grand échec culinaire ?",
-      "La pire mode que tu as suivie ?",
-      "Le dernier mensonge que tu as dit ?",
-      "Ta pire habitude en solo ?",
-      "As-tu déjà simulé une maladie ?",
-      "Achat le plus inutile ?",
-      "Célébrité surcotée selon toi ?",
-      "Ton plaisir coupable musical ?",
-      "As-tu déjà fouillé un téléphone ?",
-      "Ta peur la plus ridicule ?",
-      "Le pire cadeau reçu ?",
-      "Si tu échangeais ta vie avec un ami ici ?",
-      "As-tu déjà supprimé une photo par manque de likes ?",
-      "Pire premier date ?",
-      "Ton métier de rêve secret ?",
-      "Message envoyé à la mauvaise personne ?",
-      "Pire surnom ?",
-      "Dernière recherche Google ?",
-      "Première chose stupide si tu gagnes au loto ?",
-      "Ton plus gros secret inavoué ?"
-    ],
-    "dare": [
-      "Montre ta photo la plus gênante.",
-      "Laisse ton voisin envoyer un emoji à ton dernier contact.",
-      "Imite une célébrité jusqu'à ce qu'on devine.",
-      "Parle avec un accent étranger pendant 2 tours.",
-      "Danse sans musique pendant 1 min.",
-      "Touche ton nez avec ta langue.",
-      "Raconte une blague nulle ou gage.",
-      "Marche comme un crabe.",
-      "Laisse le groupe te coiffer.",
-      "Chante un refrain à tue-tête.",
-      "15 pompes maintenant.",
-      "Décris ton voisin avec des bruits d'animaux.",
-      "Garde les yeux fermés 1 tour.",
-      "Fais un compliment spécifique à chacun.",
-      "Bois un verre d'eau cul-sec.",
-      "Prends les commandes comme un serveur.",
-      "Montre ton temps d'écran.",
-      "Répète tout ce que dit ton voisin.",
-      "Jongle avec 3 objets.",
-      "Déclaration d'amour à un objet."
-    ]
+  "fr": {
+    "friends": {
+      "truth": ["Ton plus grand échec culinaire ?", "La pire mode que tu as suivie ?", "Le dernier mensonge que tu as dit ?", "Ta pire habitude en solo ?", "As-tu déjà simulé une maladie ?", "Achat le plus inutile ?", "Célébrité surcotée selon toi ?", "Ton plaisir coupable musical ?", "As-tu déjà fouillé un téléphone ?", "Ta peur la plus ridicule ?", "Le pire cadeau reçu ?", "Si tu échangeais ta vie avec un ami ici ?", "As-tu déjà supprimé une photo par manque de likes ?", "Pire premier date ?", "Ton métier de rêve secret ?", "Message envoyé à la mauvaise personne ?", "Pire surnom ?", "Dernière recherche Google ?", "Première chose stupide si tu gagnes au loto ?", "Ton plus gros secret inavoué ?"],
+      "dare": ["Montre ta photo la plus gênante.", "Laisse ton voisin envoyer un emoji à ton dernier contact.", "Imite une célébrité jusqu'à ce qu'on devine.", "Parle avec un accent étranger pendant 2 tours.", "Danse sans musique pendant 1 min.", "Touche ton nez avec ta langue.", "Raconte une blague nulle ou gage.", "Marche comme un crabe.", "Laisse le groupe te coiffer.", "Chante un refrain à tue-tête.", "15 pompes maintenant.", "Décris ton voisin avec des bruits d'animaux.", "Garde les yeux fermés 1 tour.", "Fais un compliment spécifique à chacun.", "Bois un verre d'eau cul-sec.", "Prends les commandes comme un serveur.", "Montre ton temps d'écran.", "Répète tout ce que dit ton voisin.", "Jongle avec 3 objets.", "Déclaration d'amour à un objet."]
+    },
+    "hot1": {
+      "truth": ["Ton premier baiser mémorable ?", "Quelle partie du corps préfères-tu caresser ?", "Un compliment qui te fait rougir ?", "Ton vêtement fétiche chez l'autre ?", "Ton date romantique idéal ?", "Une odeur qui t'excite ?", "As-tu déjà eu un coup de foudre ?", "Douceur ou assurance pour séduire ?", "Ton avis sur les regards prolongés ?", "Un secret sensuel inoffensif ?", "Ton premier fantasme ?", "Une zone sensible méconnue ?", "Le film le plus sexy ?", "Ton avis sur les préliminaires ?", "Dormir nu(e) ou habillé(e) ?", "Ton baiser préféré (cou, lèvres...) ?", "Une habitude de couple mignonne ?", "As-tu déjà écrit une lettre d'amour ?", "Ta saison préférée pour rester au lit ?", "Ton souvenir le plus doux ?"],
+      "dare": ["Masse les épaules d'un joueur 2 min.", "Regard fixe 30s avec ton voisin.", "Compliment murmuré à l'oreille.", "Tiens la main d'un joueur 2 tours.", "Câlin de 15s au choix.", "Décris ton idéal avec 5 adjectifs sensuels.", "Embrasse la main de ton voisin.", "Enlève un vêtement (hors sous-vêtements).", "Caresse les cheveux de ton voisin.", "Dessine une lettre sur le dos d'un joueur.", "Boire dans le même verre complice.", "Démarche de séduction à travers la pièce.", "Regard mystérieux intense.", "Baiser papillon sur la joue.", "Tête sur l'épaule d'un joueur 1 tour.", "Enlève tes chaussettes avec élégance.", "Danse sensuelle de 15s.", "Caresse le bras d'un joueur avec un glaçon.", "Dis à quelqu'un pourquoi il est attirant.", "Partage un secret de séduction."]
+    },
+    "hot2": {
+      "truth": ["Lieu le plus insolite pour un baiser ?", "Attirance secrète pour quelqu'un ici ?", "Type de sous-vêtement préféré ?", "Ton fantasme de flirt public ?", "Pire message suggestif envoyé ?", "Baiser le plus passionné ?", "Mener ou être guidé(e) ?", "Embrasser au premier date ?", "Chose la plus osée envoyée par SMS ?", "Déjà espionné un ex ?", "Tenue qui te rend irrésistible ?", "Plaisir coupable intime ?", "Préliminaire préféré à donner ?", "Simulé ou exagéré ton plaisir ?", "Meilleur moment pour un moment complice ?", "Quelle partie de toi aimes-tu qu'on effleure ?", "Déjà eu une pensée pour un collègue ?", "Ta règle d'or au lit ?", "Fantasme avec un inconnu ?", "Ta position de repli ?"],
+      "dare": ["Murmure une phrase suggestive.", "Embrasse le cou d'un joueur 5s.", "Retire les chaussettes de quelqu'un à une main.", "Effleure la cuisse de ton voisin.", "Assieds-toi tout près d'un joueur.", "Embrasse près des lèvres.", "Déboutonne un vêtement de ton voisin.", "Nourris quelqu'un de façon sensuelle.", "Déshabille-toi d'un vêtement de façon théâtrale.", "Clin d'oeil charmeur à ton vis-à-vis.", "Ecris un SMS coquin (sans l'envoyer).", "Caresse le cou sous le vêtement 10s.", "Touche les lèvres avec ton index.", "Câlin par derrière 10s.", "Décris la tenue d'un joueur avec passion.", "Assis sur les genoux 1 tour.", "Lèche ou mordille un lobe d'oreille.", "Mime ta position préférée.", "Trace un chemin avec ton doigt sur un bras.", "Fais un massage des mains sensuel."]
+    },
+    "hot3": {
+      "truth": ["Lieu le plus risqué fréquenté ?", "Ton fantasme inavoué ?", "Position préférée absolue ?", "Déjà filmé tes ébats ?", "Avis sur les sextoys ?", "Déjà fait l'amour en extérieur ?", "Jeu de rôle pratiqué ?", "Pire souvenir au lit ?", "Donner ou recevoir ?", "Chose la plus folle tentée ?", "Pensée intime pour un ami présent ?", "Fréquence idéale ?", "Déjà envoyé un nude ?", "Film érotique marquant ?", "Ouverture aux nouvelles pratiques ?", "Aventure d'un soir mémorable ?", "Sensation qui t'excite direct ?", "Scénario idéal ?", "Regret immédiat après un acte ?", "Ta zone la plus taboue ?"],
+      "dare": ["Lap dance de 20s au choix.", "Enlève deux vêtements.", "Imite un son de plaisir 5s.", "Main sous le vêtement d'un joueur 15s.", "French kiss 5s.", "Massage sensuel des cuisses.", "Décris ton dernier acte avec des métaphores culinaires.", "Déboutonner avec les dents.", "Lèche le cou ou l'épaule.", "Bande-toi les yeux et laisse-toi caresser 30s.", "Mime sensuel sur un oreiller.", "Retire un vêtement à un autre joueur.", "Embrasse le nombril de quelqu'un.", "Enlève tes chaussettes avec les dents.", "Laisse quelqu'un dessiner sur ta peau nue.", "Reste en sous-vêtements 3 tours.", "Dis ce qui t'excite chez ton vis-à-vis.", "Massage des pieds 1 min.", "Baiser dans le bas du dos.", "Caresse intime (avec consentement)."]
+    }
   },
-  "hot1": {
-    "truth": [
-      "Ton premier baiser mémorable ?",
-      "Quelle partie du corps préfères-tu caresser ?",
-      "Un compliment qui te fait rougir ?",
-      "Ton vêtement fétiche chez l'autre ?",
-      "Ton date romantique idéal ?",
-      "Une odeur qui t'excite ?",
-      "As-tu déjà eu un coup de foudre ?",
-      "Douceur ou assurance pour séduire ?",
-      "Ton avis sur les regards prolongés ?",
-      "Un secret sensuel inoffensif ?",
-      "Ton premier fantasme ?",
-      "Une zone sensible méconnue ?",
-      "Le film le plus sexy ?",
-      "Ton avis sur les préliminaires ?",
-      "Dormir nu(e) ou habillé(e) ?",
-      "Ton baiser préféré (cou, lèvres...) ?",
-      "Une habitude de couple mignonne ?",
-      "As-tu déjà écrit une lettre d'amour ?",
-      "Ta saison préférée pour rester au lit ?",
-      "Ton souvenir le plus doux ?"
-    ],
-    "dare": [
-      "Masse les épaules d'un joueur 2 min.",
-      "Regard fixe 30s avec ton voisin.",
-      "Compliment murmuré à l'oreille.",
-      "Tiens la main d'un joueur 2 tours.",
-      "Câlin de 15s au choix.",
-      "Décris ton idéal avec 5 adjectifs sensuels.",
-      "Embrasse la main de ton voisin.",
-      "Enlève un vêtement (hors sous-vêtements).",
-      "Caresse les cheveux de ton voisin.",
-      "Dessine une lettre sur le dos d'un joueur.",
-      "Boire dans le même verre complice.",
-      "Démarche de séduction à travers la pièce.",
-      "Regard mystérieux intense.",
-      "Baiser papillon sur la joue.",
-      "Tête sur l'épaule d'un joueur 1 tour.",
-      "Enlève tes chaussettes avec élégance.",
-      "Danse sensuelle de 15s.",
-      "Caresse le bras d'un joueur avec un glaçon.",
-      "Dis à quelqu'un pourquoi il est attirant.",
-      "Partage un secret de séduction."
-    ]
-  },
-  "hot2": {
-    "truth": [
-      "Lieu le plus insolite pour un baiser ?",
-      "Attirance secrète pour quelqu'un ici ?",
-      "Type de sous-vêtement préféré ?",
-      "Ton fantasme de flirt public ?",
-      "Pire message suggestif envoyé ?",
-      "Baiser le plus passionné ?",
-      "Mener ou être guidé(e) ?",
-      "Embrasser au premier date ?",
-      "Chose la plus osée envoyée par SMS ?",
-      "Déjà espionné un ex ?",
-      "Tenue qui te rend irrésistible ?",
-      "Plaisir coupable intime ?",
-      "Préliminaire préféré à donner ?",
-      "Simulé ou exagéré ton plaisir ?",
-      "Meilleur moment pour un moment complice ?",
-      "Quelle partie de toi aimes-tu qu'on effleure ?",
-      "Déjà eu une pensée pour un collègue ?",
-      "Ta règle d'or au lit ?",
-      "Fantasme avec un inconnu ?",
-      "Ta position de repli ?"
-    ],
-    "dare": [
-      "Murmure une phrase suggestive.",
-      "Embrasse le cou d'un joueur 5s.",
-      "Retire les chaussettes de quelqu'un à une main.",
-      "Effleure la cuisse de ton voisin.",
-      "Assieds-toi tout près d'un joueur.",
-      "Embrasse près des lèvres.",
-      "Déboutonne un vêtement de ton voisin.",
-      "Nourris quelqu'un de façon sensuelle.",
-      "Déshabille-toi d'un vêtement de façon théâtrale.",
-      "Clin d'oeil charmeur à ton vis-à-vis.",
-      "Ecris un SMS coquin (sans l'envoyer).",
-      "Caresse le cou sous le vêtement 10s.",
-      "Touche les lèvres avec ton index.",
-      "Câlin par derrière 10s.",
-      "Décris la tenue d'un joueur avec passion.",
-      "Assis sur les genoux 1 tour.",
-      "Lèche ou mordille un lobe d'oreille.",
-      "Mime ta position préférée.",
-      "Trace un chemin avec ton doigt sur un bras.",
-      "Fais un massage des mains sensuel."
-    ]
-  },
-  "hot3": {
-    "truth": [
-      "Lieu le plus risqué fréquenté ?",
-      "Ton fantasme inavoué ?",
-      "Position préférée absolue ?",
-      "Déjà filmé tes ébats ?",
-      "Avis sur les sextoys ?",
-      "Déjà fait l'amour en extérieur ?",
-      "Jeu de rôle pratiqué ?",
-      "Pire souvenir au lit ?",
-      "Donner ou recevoir ?",
-      "Chose la plus folle tentée ?",
-      "Pensée intime pour un ami présent ?",
-      "Fréquence idéale ?",
-      "Déjà envoyé un nude ?",
-      "Film érotique marquant ?",
-      "Ouverture aux nouvelles pratiques ?",
-      "Aventure d'un soir mémorable ?",
-      "Sensation qui t'excite direct ?",
-      "Scénario idéal ?",
-      "Regret immédiat après un acte ?",
-      "Ta zone la plus taboue ?"
-    ],
-    "dare": [
-      "Lap dance de 20s au choix.",
-      "Enlève deux vêtements.",
-      "Imite un son de plaisir 5s.",
-      "Main sous le vêtement d'un joueur 15s.",
-      "French kiss 5s.",
-      "Massage sensuel des cuisses.",
-      "Décris ton dernier acte avec des métaphores culinaires.",
-      "Déboutonner avec les dents.",
-      "Lèche le cou ou l'épaule.",
-      "Bande-toi les yeux et laisse-toi caresser 30s.",
-      "Mime sensuel sur un oreiller.",
-      "Retire un vêtement à un autre joueur.",
-      "Embrasse le nombril de quelqu'un.",
-      "Enlève tes chaussettes avec les dents.",
-      "Laisse quelqu'un dessiner sur ta peau nue.",
-      "Reste en sous-vêtements 3 tours.",
-      "Dis ce qui t'excite chez ton vis-à-vis.",
-      "Massage des pieds 1 min.",
-      "Baiser dans le bas du dos.",
-      "Caresse intime (avec consentement)."
-    ]
+  "en": {
+    "friends": {
+      "truth": ["Your biggest cooking disaster?", "The worst fashion trend you followed?", "The last lie you told?", "Your worst habit when alone?", "Have you ever faked being sick?", "Your most useless purchase?", "A celebrity you think is overrated?", "Your guilty pleasure song?", "Have you ever snooped through someone's phone?", "Your most ridiculous fear?", "The worst gift you've ever received?", "If you swapped lives with a friend here, who would it be?", "Have you ever deleted a photo because it didn't get enough likes?", "Your worst first date?", "Your secret dream job?", "A message you sent to the wrong person?", "Your worst nickname?", "Your last Google search?", "The first silly thing you'd do if you won the lottery?", "Your biggest unconfessed secret?"],
+      "dare": ["Show your most embarrassing photo.", "Let the person next to you send an emoji to your last contact.", "Impersonate a celebrity until someone guesses who.", "Speak with a foreign accent for 2 rounds.", "Dance with no music for 1 minute.", "Touch your nose with your tongue.", "Tell a terrible joke or take a forfeit.", "Walk like a crab.", "Let the group style your hair.", "Sing a chorus at the top of your lungs.", "Do 15 push-ups right now.", "Describe the person next to you using only animal sounds.", "Keep your eyes closed for 1 round.", "Give everyone a specific compliment.", "Chug a glass of water in one go.", "Take everyone's drink order like a waiter.", "Show your screen time stats.", "Repeat everything the person next to you says for 1 round.", "Juggle 3 objects.", "Make a love declaration to an object in the room."]
+    },
+    "hot1": {
+      "truth": ["Your most memorable first kiss?", "Which body part do you love touching most?", "A compliment that makes you blush?", "Your favorite piece of clothing on someone else?", "Your ideal romantic date?", "A scent that turns you on?", "Have you ever had love at first sight?", "Gentleness or confidence to seduce someone?", "Your take on lingering eye contact?", "A harmless sensual secret?", "Your very first fantasy?", "An underrated sensitive spot?", "The sexiest movie you've seen?", "Your opinion on foreplay?", "Sleep naked or dressed?", "Your favorite kind of kiss (neck, lips...)?", "A cute couple habit?", "Have you ever written a love letter?", "Your favorite season for staying in bed?", "Your sweetest memory?"],
+      "dare": ["Massage a player's shoulders for 2 minutes.", "Hold eye contact with the person next to you for 30s.", "Whisper a compliment in someone's ear.", "Hold a player's hand for 2 rounds.", "Give a 15s hug to anyone you choose.", "Describe your ideal partner with 5 sensual adjectives.", "Kiss the hand of the person next to you.", "Remove one item of clothing (underwear excluded).", "Stroke the hair of the person next to you.", "Trace a letter on a player's back for them to guess.", "Share a drink from the same glass with someone.", "Do a seductive walk across the room.", "Give an intense, mysterious look to someone.", "Give a butterfly kiss on someone's cheek.", "Rest your head on a player's shoulder for 1 round.", "Take off your socks elegantly.", "Do a 15s sensual dance.", "Trace an ice cube along a player's arm.", "Tell someone why you find them attractive.", "Share one of your seduction secrets."]
+    },
+    "hot2": {
+      "truth": ["The most unusual place you've kissed someone?", "A secret attraction to someone in this room?", "Your favorite type of underwear?", "Your fantasy about flirting in public?", "The worst suggestive text you've sent?", "Your most passionate kiss?", "Lead or be led?", "Kiss on the first date, yes or no?", "The boldest thing you've sent by text?", "Have you ever stalked an ex online?", "The outfit that makes you feel irresistible?", "An intimate guilty pleasure?", "Your favorite foreplay to give?", "Have you ever faked or exaggerated pleasure?", "The best time of day for an intimate moment?", "Which part of you do you love having gently touched?", "Ever had a thought about a coworker?", "Your golden rule in bed?", "A fantasy involving a stranger?", "Your go-to fallback move?"],
+      "dare": ["Whisper a suggestive line to someone.", "Kiss a player's neck for 5s.", "Remove someone's socks using only one hand.", "Gently brush the thigh of the person next to you.", "Sit as close as possible to a player.", "Kiss someone near the lips.", "Unbutton one piece of clothing on your neighbor.", "Feed someone in a sensual way.", "Remove one item of clothing dramatically.", "Give a charming wink to the person across from you.", "Write a naughty text (without sending it).", "Caress someone's neck under their clothing for 10s.", "Touch someone's lips with your index finger.", "Give a hug from behind for 10s.", "Describe a player's outfit with passion.", "Sit on someone's lap for 1 round.", "Lick or nibble an earlobe.", "Mime your favorite position.", "Trace a path with your finger along someone's arm.", "Give a sensual hand massage."]
+    },
+    "hot3": {
+      "truth": ["The riskiest place you've had an intimate moment?", "Your unconfessed fantasy?", "Your absolute favorite position?", "Have you ever filmed yourself having sex?", "Your opinion on sex toys?", "Have you ever had sex outdoors?", "A roleplay you've tried?", "Your worst memory in bed?", "Give or receive?", "The wildest thing you've tried?", "Have you had an intimate thought about a friend here?", "Your ideal frequency?", "Have you ever sent a nude?", "A memorable erotic movie?", "How open are you to trying new things?", "Your most memorable one-night stand?", "A sensation that turns you on instantly?", "Your ideal scenario?", "An instant regret after doing something?", "Your most taboo topic?"],
+      "dare": ["Give a 20s lap dance of your choice.", "Remove two items of clothing.", "Imitate a pleasure sound for 5s.", "Put your hand under a player's clothing for 15s.", "French kiss for 5s.", "Give a sensual thigh massage.", "Describe your last intimate moment using cooking metaphors.", "Unbutton something using only your teeth.", "Lick someone's neck or shoulder.", "Blindfold yourself and let someone touch you for 30s.", "Do a sensual mime on a pillow.", "Remove an item of clothing from another player.", "Kiss someone's belly button.", "Take off your socks using only your teeth.", "Let someone draw on your bare skin.", "Stay in your underwear for 3 rounds.", "Say what turns you on about the person across from you.", "Give a 1-minute foot massage.", "Kiss someone on the lower back.", "Give an intimate caress (with consent)."]
+    }
   }
 }
