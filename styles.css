@@ -5,6 +5,7 @@
     --card-bg: rgba(17, 24, 39, 0.7);
     --accent-friends: #6366f1;
     --accent-hot: #f43f5e;
+    --accent-domination: #a855f7;
 }
 
 body {
@@ -55,4 +56,9 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
     margin-top: -8px;
     box-shadow: 0 0 15px rgba(244, 63, 94, 0.5);
+}
+
+input[type=range].range-dom::-webkit-slider-thumb {
+    background: var(--accent-domination);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
 }

@@ -14,7 +14,7 @@
     <div id="app" class="w-full max-w-md h-[85vh] flex flex-col glass rounded-[2.5rem] overflow-hidden relative">
 
         <!-- SECTION : ACCUEIL -->
-        <section id="view-home" class="flex-1 flex flex-col p-8 view-transition">
+        <section id="view-home" class="flex-1 min-h-0 flex flex-col p-8 view-transition">
             <div class="flex justify-end gap-2 mb-2">
                 <button id="lang-fr" onclick="setLang('fr')" class="text-xs font-bold px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white transition-colors">FR</button>
                 <button id="lang-en" onclick="setLang('en')" class="text-xs font-bold px-3 py-1 rounded-full border border-gray-700 text-gray-400 hover:text-white transition-colors">EN</button>
@@ -24,10 +24,10 @@
                 <p class="text-gray-400 text-sm font-medium">REVELATIONS</p>
             </header>
 
-            <div class="space-y-6 flex-1 flex flex-col justify-center">
-                <p data-i18n="chooseUniverse" class="text-center text-gray-500 text-xs uppercase tracking-widest mb-4">Choisissez votre univers</p>
+            <div class="space-y-6 flex-1 min-h-0 flex flex-col justify-start overflow-y-auto pb-2">
+                <p data-i18n="chooseUniverse" class="shrink-0 text-center text-gray-500 text-xs uppercase tracking-widest mb-4">Choisissez votre univers</p>
 
-                <button onclick="setMode('friends')" class="group relative w-full p-6 rounded-3xl bg-indigo-500/10 border border-indigo-500/20 hover:bg-indigo-500/20 transition-all text-left overflow-hidden">
+                <button onclick="setMode('friends')" class="shrink-0 group relative w-full p-6 rounded-3xl bg-indigo-500/10 border border-indigo-500/20 hover:bg-indigo-500/20 transition-all text-left overflow-hidden">
                     <div class="relative z-10">
                         <i class="fa-solid fa-user-group text-indigo-400 text-2xl mb-3"></i>
                         <h2 data-i18n="friendsTitle" class="text-xl font-bold">Amis & Chill</h2>
@@ -38,7 +38,7 @@
                     </div>
                 </button>
 
-                <div class="p-6 rounded-3xl bg-rose-500/10 border border-rose-500/20 space-y-4">
+                <div class="shrink-0 p-6 rounded-3xl bg-rose-500/10 border border-rose-500/20 space-y-4">
                     <button onclick="setMode('hot')" class="group w-full text-left">
                         <i class="fa-solid fa-fire text-rose-400 text-2xl mb-3"></i>
                         <h2 class="text-xl font-bold">Sexy Hot</h2>
@@ -54,6 +54,28 @@
                         <input type="range" id="diff-slider" min="1" max="3" value="1" oninput="updateDifficulty(this.value)">
                     </div>
                 </div>
+
+                <div class="shrink-0 p-6 rounded-3xl bg-purple-500/10 border border-purple-500/20 space-y-4">
+                    <button onclick="setMode('domination')" class="group w-full text-left">
+                        <i class="fa-solid fa-crown text-purple-400 text-2xl mb-3"></i>
+                        <h2 data-i18n="dominationTitle" class="text-xl font-bold">Domination</h2>
+                        <p data-i18n="dominationDesc" class="text-purple-300/60 text-sm mb-4">Uniquement des gages, à ton service.</p>
+                    </button>
+
+                    <div class="flex gap-2">
+                        <button id="dom-cat-nonsexy" onclick="setDominationCategory('nonsexy')" data-i18n="domCatNonSexy" class="flex-1 text-xs font-bold py-2 rounded-xl border border-purple-500/30 text-white bg-purple-500/20 transition-colors">Normal</button>
+                        <button id="dom-cat-sexy" onclick="setDominationCategory('sexy')" data-i18n="domCatSexy" class="flex-1 text-xs font-bold py-2 rounded-xl border border-purple-500/30 text-purple-300/50 transition-colors">Sexy</button>
+                    </div>
+
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-[10px] uppercase font-bold tracking-tighter text-purple-400">
+                            <span id="dom-label-1">1</span>
+                            <span id="dom-label-2">2</span>
+                            <span id="dom-label-3">3</span>
+                        </div>
+                        <input type="range" class="range-dom" id="dom-diff-slider" min="1" max="3" value="1" oninput="updateDominationDifficulty(this.value)">
+                    </div>
+                </div>
             </div>
 
             <footer class="mt-8 text-center">
@@ -64,7 +86,7 @@
         </section>
 
         <!-- SECTION : JEU -->
-        <section id="view-game" class="hidden flex-1 flex flex-col p-8 view-transition opacity-0">
+        <section id="view-game" class="hidden flex-1 min-h-0 flex flex-col p-8 view-transition opacity-0">
             <nav class="flex justify-between items-center mb-12">
                 <button onclick="goBack()" class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
                     <i class="fa-solid fa-arrow-left"></i>
@@ -77,18 +99,20 @@
 
             <div id="choice-screen" class="flex-1 flex flex-col justify-center space-y-6">
                 <p data-i18n="yourTurn" class="text-center text-gray-400 text-sm mb-4">C'est ton tour...</p>
-                <button onclick="drawCard('truth')" class="w-full py-16 rounded-3xl border-2 border-dashed border-gray-800 hover:border-indigo-500/50 hover:bg-indigo-500/5 transition-all text-center group">
-                    <span data-i18n="truthTitle" class="block text-3xl font-black mb-2 group-hover:scale-110 transition-transform">VÉRITÉ</span>
-                    <span data-i18n="truthSub" class="text-xs text-gray-500">Avoue tout</span>
-                </button>
-                <div class="flex items-center gap-4">
-                    <div class="h-px bg-gray-800 flex-1"></div>
-                    <span data-i18n="orWord" class="text-[10px] text-gray-600 font-bold">OU</span>
-                    <div class="h-px bg-gray-800 flex-1"></div>
+                <div id="truth-option" class="space-y-6">
+                    <button onclick="drawCard('truth')" class="w-full py-16 rounded-3xl border-2 border-dashed border-gray-800 hover:border-indigo-500/50 hover:bg-indigo-500/5 transition-all text-center group">
+                        <span data-i18n="truthTitle" class="block text-3xl font-black mb-2 group-hover:scale-110 transition-transform">VÉRITÉ</span>
+                        <span data-i18n="truthSub" class="text-xs text-gray-500">Avoue tout</span>
+                    </button>
+                    <div class="flex items-center gap-4">
+                        <div class="h-px bg-gray-800 flex-1"></div>
+                        <span data-i18n="orWord" class="text-[10px] text-gray-600 font-bold">OU</span>
+                        <div class="h-px bg-gray-800 flex-1"></div>
+                    </div>
                 </div>
                 <button onclick="drawCard('dare')" class="w-full py-16 rounded-3xl border-2 border-dashed border-gray-800 hover:border-rose-500/50 hover:bg-rose-500/5 transition-all text-center group">
-                    <span data-i18n="dareTitle" class="block text-3xl font-black mb-2 group-hover:scale-110 transition-transform">ACTION</span>
-                    <span data-i18n="dareSub" class="text-xs text-gray-500">Relève le défi</span>
+                    <span id="dare-title" data-i18n="dareTitle" class="block text-3xl font-black mb-2 group-hover:scale-110 transition-transform">ACTION</span>
+                    <span id="dare-sub" data-i18n="dareSub" class="text-xs text-gray-500">Relève le défi</span>
                 </button>
             </div>
 

@@ -23,6 +23,12 @@ const translations = {
         modeSoft: "SOFT",
         modeFlirt: "FLIRT",
         modeHard: "HARD",
+        dominationTitle: "Domination",
+        dominationDesc: "Uniquement des gages, à ton service.",
+        domCatNonSexy: "Normal",
+        domCatSexy: "Sexy",
+        dareTitleDom: "GAGE",
+        dareSubDom: "Obéis à l'ordre",
         deckEmpty: "Paquet vide ! On remélange.",
         cardsExplored: (seen, total) => `${seen} / ${total} cartes explorées`,
         loadError: "Erreur : impossible de charger cards.json. Sers le site via un serveur local (voir README.md)."
@@ -45,6 +51,12 @@ const translations = {
         modeSoft: "SOFT",
         modeFlirt: "FLIRT",
         modeHard: "HARD",
+        dominationTitle: "Domination",
+        dominationDesc: "Dares only, at your service.",
+        domCatNonSexy: "Normal",
+        domCatSexy: "Sexy",
+        dareTitleDom: "DARE",
+        dareSubDom: "Obey the command",
         deckEmpty: "Deck empty! Reshuffling.",
         cardsExplored: (seen, total) => `${seen} / ${total} cards explored`,
         loadError: "Error: could not load cards.json. Serve the site via a local server (see README.md)."
@@ -71,6 +83,8 @@ async function loadCards() {
 
 let currentMode = null;
 let currentDifficulty = 1;
+let dominationCategory = 'nonsexy';
+let dominationDifficulty = 1;
 let currentLang = 'fr';
 let usedCards = { truth: [], dare: [] };
 let chart = null; // Chart.js instance
@@ -105,7 +119,8 @@ function setMode(mode) {
     startBtn.classList.remove('hidden');
     const indicators = {
         friends: 'var(--accent-friends)',
-        hot: 'var(--accent-hot)'
+        hot: 'var(--accent-hot)',
+        domination: 'var(--accent-domination)'
     };
     startBtn.style.backgroundColor = indicators[mode];
     startBtn.style.color = 'white';
@@ -121,27 +136,73 @@ function updateDifficulty(val) {
     if (currentMode !== 'hot') setMode('hot');
 }
 
+function setDominationCategory(category) {
+    dominationCategory = category;
+    const nonSexyBtn = document.getElementById('dom-cat-nonsexy');
+    const sexyBtn = document.getElementById('dom-cat-sexy');
+    nonSexyBtn.classList.toggle('bg-purple-500/20', category === 'nonsexy');
+    nonSexyBtn.classList.toggle('text-white', category === 'nonsexy');
+    nonSexyBtn.classList.toggle('text-purple-300/50', category !== 'nonsexy');
+    sexyBtn.classList.toggle('bg-purple-500/20', category === 'sexy');
+    sexyBtn.classList.toggle('text-white', category === 'sexy');
+    sexyBtn.classList.toggle('text-purple-300/50', category !== 'sexy');
+    if (currentMode !== 'domination') setMode('domination');
+}
+
+function updateDominationDifficulty(val) {
+    dominationDifficulty = parseInt(val, 10);
+    const labels = ['dom-label-1', 'dom-label-2', 'dom-label-3'];
+    labels.forEach((l, i) => {
+        const el = document.getElementById(l);
+        if (el) el.style.opacity = (i + 1 === dominationDifficulty) ? '1' : '0.3';
+    });
+    if (currentMode !== 'domination') setMode('domination');
+}
+
 function initGame() {
     switchView('view-home', 'view-game');
     const indicator = document.getElementById('mode-indicator');
     const t = translations[currentLang];
+    const truthOption = document.getElementById('truth-option');
+    const dareTitleEl = document.getElementById('dare-title');
+    const dareSubEl = document.getElementById('dare-sub');
 
     if (currentMode === 'friends') {
         indicator.innerText = t.modeFriends;
         indicator.style.borderColor = 'rgba(99, 102, 241, 0.2)';
         indicator.style.color = '#818cf8';
-    } else {
+        truthOption.classList.remove('hidden');
+        dareTitleEl.innerText = t.dareTitle;
+        dareSubEl.innerText = t.dareSub;
+    } else if (currentMode === 'hot') {
         indicator.innerText = [t.modeSoft, t.modeFlirt, t.modeHard][currentDifficulty - 1];
         indicator.style.borderColor = 'rgba(244, 63, 94, 0.2)';
         indicator.style.color = '#fb7185';
+        truthOption.classList.remove('hidden');
+        dareTitleEl.innerText = t.dareTitle;
+        dareSubEl.innerText = t.dareSub;
+    } else if (currentMode === 'domination') {
+        const catLabel = dominationCategory === 'sexy' ? t.domCatSexy : t.domCatNonSexy;
+        indicator.innerText = `${catLabel.toUpperCase()} ${dominationDifficulty}`;
+        indicator.style.borderColor = 'rgba(168, 85, 247, 0.2)';
+        indicator.style.color = '#c084fc';
+        truthOption.classList.add('hidden');
+        dareTitleEl.innerText = t.dareTitleDom;
+        dareSubEl.innerText = t.dareSubDom;
     }
 
     usedCards = { truth: [], dare: [] };
     initChart();
 }
 
+function getActiveTypes() {
+    return currentMode === 'domination' ? ['dare'] : ['truth', 'dare'];
+}
+
 function getPoolKey() {
-    return currentMode === 'friends' ? 'friends' : `hot${currentDifficulty}`;
+    if (currentMode === 'friends') return 'friends';
+    if (currentMode === 'hot') return `hot${currentDifficulty}`;
+    if (currentMode === 'domination') return `dom_${dominationCategory}${dominationDifficulty}`;
 }
 
 function drawCard(type) {
@@ -211,13 +272,14 @@ function toggleStats() {
 function initChart() {
     const canvas = document.getElementById('deckChart');
     const ctx = canvas.getContext('2d');
+    const total = getTotalCards();
     chart = new window.Chart(ctx, {
         type: 'doughnut',
         data: {
             labels: ['Vues', 'Restantes'],
             datasets: [{
-                data: [0, 40],
-                backgroundColor: [currentMode === 'friends' ? '#6366f1' : '#f43f5e', '#1f2937'],
+                data: [0, total],
+                backgroundColor: [currentMode === 'friends' ? '#6366f1' : (currentMode === 'domination' ? '#a855f7' : '#f43f5e'), '#1f2937'],
                 borderWidth: 0
             }]
         },
@@ -228,8 +290,13 @@ function initChart() {
     });
 }
 
+function getTotalCards() {
+    const pool = allCards[currentLang][getPoolKey()];
+    return getActiveTypes().reduce((sum, type) => sum + (pool[type] ? pool[type].length : 0), 0);
+}
+
 function updateChart() {
-    const total = 40;
+    const total = getTotalCards();
     const seen = usedCards.truth.length + usedCards.dare.length;
     chart.data.datasets[0].data = [seen, total - seen];
     chart.update();
@@ -242,6 +309,8 @@ function updateChart() {
 
 window.setMode = setMode;
 window.updateDifficulty = updateDifficulty;
+window.setDominationCategory = setDominationCategory;
+window.updateDominationDifficulty = updateDominationDifficulty;
 window.initGame = initGame;
 window.drawCard = drawCard;
 window.nextPlayer = nextPlayer;
