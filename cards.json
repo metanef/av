@@ -1,74 +1,830 @@
 {
   "fr": {
     "friends": {
-      "truth": ["Ton plus grand échec culinaire ?", "La pire mode que tu as suivie ?", "Le dernier mensonge que tu as dit ?", "Ta pire habitude en solo ?", "As-tu déjà simulé une maladie ?", "Achat le plus inutile ?", "Célébrité surcotée selon toi ?", "Ton plaisir coupable musical ?", "As-tu déjà fouillé un téléphone ?", "Ta peur la plus ridicule ?", "Le pire cadeau reçu ?", "Si tu échangeais ta vie avec un ami ici ?", "As-tu déjà supprimé une photo par manque de likes ?", "Pire premier date ?", "Ton métier de rêve secret ?", "Message envoyé à la mauvaise personne ?", "Pire surnom ?", "Dernière recherche Google ?", "Première chose stupide si tu gagnes au loto ?", "Ton plus gros secret inavoué ?"],
-      "dare": ["Montre ta photo la plus gênante.", "Laisse ton voisin envoyer un emoji à ton dernier contact.", "Imite une célébrité jusqu'à ce qu'on devine.", "Parle avec un accent étranger pendant 2 tours.", "Danse sans musique pendant 1 min.", "Touche ton nez avec ta langue.", "Raconte une blague nulle ou gage.", "Marche comme un crabe.", "Laisse le groupe te coiffer.", "Chante un refrain à tue-tête.", "15 pompes maintenant.", "Décris ton voisin avec des bruits d'animaux.", "Garde les yeux fermés 1 tour.", "Fais un compliment spécifique à chacun.", "Bois un verre d'eau cul-sec.", "Prends les commandes comme un serveur.", "Montre ton temps d'écran.", "Répète tout ce que dit ton voisin.", "Jongle avec 3 objets.", "Déclaration d'amour à un objet."]
+      "truth": [
+        "Ton plus grand échec culinaire ?",
+        "La pire mode que tu as suivie ?",
+        "Le dernier mensonge que tu as dit ?",
+        "Ta pire habitude en solo ?",
+        "As-tu déjà simulé une maladie ?",
+        "Achat le plus inutile ?",
+        "Célébrité surcotée selon toi ?",
+        "Ton plaisir coupable musical ?",
+        "As-tu déjà fouillé un téléphone ?",
+        "Ta peur la plus ridicule ?",
+        "Le pire cadeau reçu ?",
+        "Si tu échangeais ta vie avec un ami ici ?",
+        "As-tu déjà supprimé une photo par manque de likes ?",
+        "Pire premier date ?",
+        "Ton métier de rêve secret ?",
+        "Message envoyé à la mauvaise personne ?",
+        "Pire surnom ?",
+        "Dernière recherche Google ?",
+        "Première chose stupide si tu gagnes au loto ?",
+        "Ton plus gros secret inavoué ?"
+      ],
+      "dare": [
+        "Montre ta photo la plus gênante.",
+        "Laisse ton voisin envoyer un emoji à ton dernier contact.",
+        "Imite une célébrité jusqu'à ce qu'on devine.",
+        "Parle avec un accent étranger pendant 2 tours.",
+        "Danse sans musique pendant 1 min.",
+        "Touche ton nez avec ta langue.",
+        "Raconte une blague nulle ou gage.",
+        "Marche comme un crabe.",
+        "Laisse le groupe te coiffer.",
+        "Chante un refrain à tue-tête.",
+        "15 pompes maintenant.",
+        "Décris ton voisin avec des bruits d'animaux.",
+        "Garde les yeux fermés 1 tour.",
+        "Fais un compliment spécifique à chacun.",
+        "Bois un verre d'eau cul-sec.",
+        "Prends les commandes comme un serveur.",
+        "Montre ton temps d'écran.",
+        "Répète tout ce que dit ton voisin.",
+        "Jongle avec 3 objets.",
+        "Déclaration d'amour à un objet."
+      ]
     },
     "hot1": {
-      "truth": ["Ton premier baiser mémorable ?", "Quelle partie du corps préfères-tu caresser ?", "Un compliment qui te fait rougir ?", "Ton vêtement fétiche chez l'autre ?", "Ton date romantique idéal ?", "Une odeur qui t'excite ?", "As-tu déjà eu un coup de foudre ?", "Douceur ou assurance pour séduire ?", "Ton avis sur les regards prolongés ?", "Un secret sensuel inoffensif ?", "Ton premier fantasme ?", "Une zone sensible méconnue ?", "Le film le plus sexy ?", "Ton avis sur les préliminaires ?", "Dormir nu(e) ou habillé(e) ?", "Ton baiser préféré (cou, lèvres...) ?", "Une habitude de couple mignonne ?", "As-tu déjà écrit une lettre d'amour ?", "Ta saison préférée pour rester au lit ?", "Ton souvenir le plus doux ?"],
-      "dare": ["Masse les épaules d'un joueur 2 min.", "Regard fixe 30s avec ton voisin.", "Compliment murmuré à l'oreille.", "Tiens la main d'un joueur 2 tours.", "Câlin de 15s au choix.", "Décris ton idéal avec 5 adjectifs sensuels.", "Embrasse la main de ton voisin.", "Enlève un vêtement (hors sous-vêtements).", "Caresse les cheveux de ton voisin.", "Dessine une lettre sur le dos d'un joueur.", "Boire dans le même verre complice.", "Démarche de séduction à travers la pièce.", "Regard mystérieux intense.", "Baiser papillon sur la joue.", "Tête sur l'épaule d'un joueur 1 tour.", "Enlève tes chaussettes avec élégance.", "Danse sensuelle de 15s.", "Caresse le bras d'un joueur avec un glaçon.", "Dis à quelqu'un pourquoi il est attirant.", "Partage un secret de séduction."]
+      "truth": [
+        "Ton premier baiser mémorable ?",
+        "Quelle partie du corps préfères-tu caresser ?",
+        "Un compliment qui te fait rougir ?",
+        "Ton vêtement fétiche chez l'autre ?",
+        "Ton date romantique idéal ?",
+        "Une odeur qui t'excite ?",
+        "As-tu déjà eu un coup de foudre ?",
+        "Douceur ou assurance pour séduire ?",
+        "Ton avis sur les regards prolongés ?",
+        "Un secret sensuel inoffensif ?",
+        "Ton premier fantasme ?",
+        "Une zone sensible méconnue ?",
+        "Le film le plus sexy ?",
+        "Ton avis sur les préliminaires ?",
+        "Dormir nu(e) ou habillé(e) ?",
+        "Ton baiser préféré (cou, lèvres...) ?",
+        "Une habitude de couple mignonne ?",
+        "As-tu déjà écrit une lettre d'amour ?",
+        "Ta saison préférée pour rester au lit ?",
+        "Ton souvenir le plus doux ?"
+      ],
+      "dare": [
+        "Masse les épaules d'un joueur 2 min.",
+        "Regard fixe 30s avec ton voisin.",
+        "Compliment murmuré à l'oreille.",
+        "Tiens la main d'un joueur 2 tours.",
+        "Câlin de 15s au choix.",
+        "Décris ton idéal avec 5 adjectifs sensuels.",
+        "Embrasse la main de ton voisin.",
+        "Enlève un vêtement (hors sous-vêtements).",
+        "Caresse les cheveux de ton voisin.",
+        "Dessine une lettre sur le dos d'un joueur.",
+        "Boire dans le même verre complice.",
+        "Démarche de séduction à travers la pièce.",
+        "Regard mystérieux intense.",
+        "Baiser papillon sur la joue.",
+        "Tête sur l'épaule d'un joueur 1 tour.",
+        "Enlève tes chaussettes avec élégance.",
+        "Danse sensuelle de 15s.",
+        "Caresse le bras d'un joueur avec un glaçon.",
+        "Dis à quelqu'un pourquoi il est attirant.",
+        "Partage un secret de séduction."
+      ]
     },
     "hot2": {
-      "truth": ["Lieu le plus insolite pour un baiser ?", "Attirance secrète pour quelqu'un ici ?", "Type de sous-vêtement préféré ?", "Ton fantasme de flirt public ?", "Pire message suggestif envoyé ?", "Baiser le plus passionné ?", "Mener ou être guidé(e) ?", "Embrasser au premier date ?", "Chose la plus osée envoyée par SMS ?", "Déjà espionné un ex ?", "Tenue qui te rend irrésistible ?", "Plaisir coupable intime ?", "Préliminaire préféré à donner ?", "Simulé ou exagéré ton plaisir ?", "Meilleur moment pour un moment complice ?", "Quelle partie de toi aimes-tu qu'on effleure ?", "Déjà eu une pensée pour un collègue ?", "Ta règle d'or au lit ?", "Fantasme avec un inconnu ?", "Ta position de repli ?"],
-      "dare": ["Murmure une phrase suggestive.", "Embrasse le cou d'un joueur 5s.", "Retire les chaussettes de quelqu'un à une main.", "Effleure la cuisse de ton voisin.", "Assieds-toi tout près d'un joueur.", "Embrasse près des lèvres.", "Déboutonne un vêtement de ton voisin.", "Nourris quelqu'un de façon sensuelle.", "Déshabille-toi d'un vêtement de façon théâtrale.", "Clin d'oeil charmeur à ton vis-à-vis.", "Ecris un SMS coquin (sans l'envoyer).", "Caresse le cou sous le vêtement 10s.", "Touche les lèvres avec ton index.", "Câlin par derrière 10s.", "Décris la tenue d'un joueur avec passion.", "Assis sur les genoux 1 tour.", "Lèche ou mordille un lobe d'oreille.", "Mime ta position préférée.", "Trace un chemin avec ton doigt sur un bras.", "Fais un massage des mains sensuel."]
+      "truth": [
+        "Lieu le plus insolite pour un baiser ?",
+        "Attirance secrète pour quelqu'un ici ?",
+        "Type de sous-vêtement préféré ?",
+        "Ton fantasme de flirt public ?",
+        "Pire message suggestif envoyé ?",
+        "Baiser le plus passionné ?",
+        "Mener ou être guidé(e) ?",
+        "Embrasser au premier date ?",
+        "Chose la plus osée envoyée par SMS ?",
+        "Déjà espionné un ex ?",
+        "Tenue qui te rend irrésistible ?",
+        "Plaisir coupable intime ?",
+        "Préliminaire préféré à donner ?",
+        "Simulé ou exagéré ton plaisir ?",
+        "Meilleur moment pour un moment complice ?",
+        "Quelle partie de toi aimes-tu qu'on effleure ?",
+        "Déjà eu une pensée pour un collègue ?",
+        "Ta règle d'or au lit ?",
+        "Fantasme avec un inconnu ?",
+        "Ta position de repli ?"
+      ],
+      "dare": [
+        "Murmure une phrase suggestive.",
+        "Embrasse le cou d'un joueur 5s.",
+        "Retire les chaussettes de quelqu'un à une main.",
+        "Effleure la cuisse de ton voisin.",
+        "Assieds-toi tout près d'un joueur.",
+        "Embrasse près des lèvres.",
+        "Déboutonne un vêtement de ton voisin.",
+        "Nourris quelqu'un de façon sensuelle.",
+        "Déshabille-toi d'un vêtement de façon théâtrale.",
+        "Clin d'oeil charmeur à ton vis-à-vis.",
+        "Ecris un SMS coquin (sans l'envoyer).",
+        "Caresse le cou sous le vêtement 10s.",
+        "Touche les lèvres avec ton index.",
+        "Câlin par derrière 10s.",
+        "Décris la tenue d'un joueur avec passion.",
+        "Assis sur les genoux 1 tour.",
+        "Lèche ou mordille un lobe d'oreille.",
+        "Mime ta position préférée.",
+        "Trace un chemin avec ton doigt sur un bras.",
+        "Fais un massage des mains sensuel."
+      ]
     },
     "hot3": {
-      "truth": ["Lieu le plus risqué fréquenté ?", "Ton fantasme inavoué ?", "Position préférée absolue ?", "Déjà filmé tes ébats ?", "Avis sur les sextoys ?", "Déjà fait l'amour en extérieur ?", "Jeu de rôle pratiqué ?", "Pire souvenir au lit ?", "Donner ou recevoir ?", "Chose la plus folle tentée ?", "Pensée intime pour un ami présent ?", "Fréquence idéale ?", "Déjà envoyé un nude ?", "Film érotique marquant ?", "Ouverture aux nouvelles pratiques ?", "Aventure d'un soir mémorable ?", "Sensation qui t'excite direct ?", "Scénario idéal ?", "Regret immédiat après un acte ?", "Ta zone la plus taboue ?"],
-      "dare": ["Lap dance de 20s au choix.", "Enlève deux vêtements.", "Imite un son de plaisir 5s.", "Main sous le vêtement d'un joueur 15s.", "French kiss 5s.", "Massage sensuel des cuisses.", "Décris ton dernier acte avec des métaphores culinaires.", "Déboutonner avec les dents.", "Lèche le cou ou l'épaule.", "Bande-toi les yeux et laisse-toi caresser 30s.", "Mime sensuel sur un oreiller.", "Retire un vêtement à un autre joueur.", "Embrasse le nombril de quelqu'un.", "Enlève tes chaussettes avec les dents.", "Laisse quelqu'un dessiner sur ta peau nue.", "Reste en sous-vêtements 3 tours.", "Dis ce qui t'excite chez ton vis-à-vis.", "Massage des pieds 1 min.", "Baiser dans le bas du dos.", "Caresse intime (avec consentement)."]
+      "truth": [
+        "Lieu le plus risqué fréquenté ?",
+        "Ton fantasme inavoué ?",
+        "Position préférée absolue ?",
+        "Déjà filmé tes ébats ?",
+        "Avis sur les sextoys ?",
+        "Déjà fait l'amour en extérieur ?",
+        "Jeu de rôle pratiqué ?",
+        "Pire souvenir au lit ?",
+        "Donner ou recevoir ?",
+        "Chose la plus folle tentée ?",
+        "Pensée intime pour un ami présent ?",
+        "Fréquence idéale ?",
+        "Déjà envoyé un nude ?",
+        "Film érotique marquant ?",
+        "Ouverture aux nouvelles pratiques ?",
+        "Aventure d'un soir mémorable ?",
+        "Sensation qui t'excite direct ?",
+        "Scénario idéal ?",
+        "Regret immédiat après un acte ?",
+        "Ta zone la plus taboue ?"
+      ],
+      "dare": [
+        "Lap dance de 20s au choix.",
+        "Enlève deux vêtements.",
+        "Imite un son de plaisir 5s.",
+        "Main sous le vêtement d'un joueur 15s.",
+        "French kiss 5s.",
+        "Massage sensuel des cuisses.",
+        "Décris ton dernier acte avec des métaphores culinaires.",
+        "Déboutonner avec les dents.",
+        "Lèche le cou ou l'épaule.",
+        "Bande-toi les yeux et laisse-toi caresser 30s.",
+        "Mime sensuel sur un oreiller.",
+        "Retire un vêtement à un autre joueur.",
+        "Embrasse le nombril de quelqu'un.",
+        "Enlève tes chaussettes avec les dents.",
+        "Laisse quelqu'un dessiner sur ta peau nue.",
+        "Reste en sous-vêtements 3 tours.",
+        "Dis ce qui t'excite chez ton vis-à-vis.",
+        "Massage des pieds 1 min.",
+        "Baiser dans le bas du dos.",
+        "Caresse intime (avec consentement)."
+      ]
     },
     "dom_nonsexy1": {
-      "dare": ["Apporte à boire à la personne qui domine.", "Reste à genoux pendant 1 minute.", "Appelle la personne qui domine \"Maître/Maîtresse\" pendant 3 tours.", "Fais un compliment sincère à la personne qui domine.", "Exécute un ordre simple sans discuter (ex : va chercher un objet).", "Reste silencieux pendant 2 tours, sauf si on t'adresse la parole.", "Masse les épaules de la personne qui domine pendant 1 min.", "Range un objet désigné par la personne qui domine.", "Tiens-toi debout, dos droit, pendant 1 tour complet.", "Demande la permission avant de reprendre une gorgée de ta boisson."]
+      "dare": [
+        "Apporte à boire à la personne qui domine.",
+        "Reste à genoux pendant 1 minute.",
+        "Appelle la personne qui domine \"Maître/Maîtresse\" pendant 3 tours.",
+        "Fais un compliment sincère à la personne qui domine.",
+        "Exécute un ordre simple sans discuter (ex : va chercher un objet).",
+        "Reste silencieux pendant 2 tours, sauf si on t'adresse la parole.",
+        "Masse les épaules de la personne qui domine pendant 1 min.",
+        "Range un objet désigné par la personne qui domine.",
+        "Tiens-toi debout, dos droit, pendant 1 tour complet.",
+        "Demande la permission avant de reprendre une gorgée de ta boisson."
+      ]
     },
     "dom_nonsexy2": {
-      "dare": ["Reste à genoux pendant 3 tours complets.", "Effectue 10 pompes sur ordre de la personne qui domine.", "Laisse la personne qui domine choisir ta prochaine phrase à dire à voix haute.", "Sers de \"table\" : reste à quatre pattes 1 minute pendant qu'on pose un verre sur ton dos.", "Répète une phrase imposée par la personne qui domine, 5 fois de suite.", "Laisse-toi bander les yeux pendant 2 tours.", "Obéis à un ordre vestimentaire (ex : retirer un accessoire, remettre une chaussure autrement).", "Reste immobile en posture imposée pendant 1 minute.", "Demande la permission avant chaque action pendant 2 tours (parler, boire, bouger).", "Laisse la personne qui domine te donner un surnom pour le reste de la partie."]
+      "dare": [
+        "Reste à genoux pendant 3 tours complets.",
+        "Effectue 10 pompes sur ordre de la personne qui domine.",
+        "Laisse la personne qui domine choisir ta prochaine phrase à dire à voix haute.",
+        "Sers de \"table\" : reste à quatre pattes 1 minute pendant qu'on pose un verre sur ton dos.",
+        "Répète une phrase imposée par la personne qui domine, 5 fois de suite.",
+        "Laisse-toi bander les yeux pendant 2 tours.",
+        "Obéis à un ordre vestimentaire (ex : retirer un accessoire, remettre une chaussure autrement).",
+        "Reste immobile en posture imposée pendant 1 minute.",
+        "Demande la permission avant chaque action pendant 2 tours (parler, boire, bouger).",
+        "Laisse la personne qui domine te donner un surnom pour le reste de la partie."
+      ]
     },
     "dom_nonsexy3": {
-      "dare": ["Reste à genoux pendant toute la durée d'un tour complet du groupe.", "Exécute 20 pompes ou un gage physique intense sur ordre.", "Sers d'esclave personnel pendant 3 tours (apporter, ranger, obéir sans discuter).", "Laisse la personne qui domine te donner 3 ordres d'affilée à exécuter immédiatement.", "Reste silencieux et immobile pendant 5 minutes, sauf ordre contraire.", "Laisse-toi entièrement bander les yeux et guider à travers la pièce.", "Accepte un gage physique inconfortable choisi par la personne qui domine (ex : porter un objet en équilibre, tenir une position).", "Demande la permission pour absolument tout pendant le reste de la manche (parler, bouger, boire).", "Laisse la personne qui domine choisir intégralement ta prochaine tenue/accessoire pour la soirée.", "Accepte d'exécuter un ordre humiliant mais non sexuel choisi par le groupe (ex : imiter un animal en marchant, chanter à genoux)."]
+      "dare": [
+        "Reste à genoux pendant toute la durée d'un tour complet du groupe.",
+        "Exécute 20 pompes ou un gage physique intense sur ordre.",
+        "Sers d'esclave personnel pendant 3 tours (apporter, ranger, obéir sans discuter).",
+        "Laisse la personne qui domine te donner 3 ordres d'affilée à exécuter immédiatement.",
+        "Reste silencieux et immobile pendant 5 minutes, sauf ordre contraire.",
+        "Laisse-toi entièrement bander les yeux et guider à travers la pièce.",
+        "Accepte un gage physique inconfortable choisi par la personne qui domine (ex : porter un objet en équilibre, tenir une position).",
+        "Demande la permission pour absolument tout pendant le reste de la manche (parler, bouger, boire).",
+        "Laisse la personne qui domine choisir intégralement ta prochaine tenue/accessoire pour la soirée.",
+        "Accepte d'exécuter un ordre humiliant mais non sexuel choisi par le groupe (ex : imiter un animal en marchant, chanter à genoux)."
+      ]
     },
     "dom_sexy1": {
-      "dare": ["Appelle la personne qui domine \"Maître/Maîtresse\" pendant 3 tours.", "Reste à genoux devant la personne qui domine pendant 1 minute.", "Embrasse la main de la personne qui domine.", "Masse les épaules de la personne qui domine de façon sensuelle pendant 2 min.", "Attends debout, immobile, que la personne qui domine te touche la joue.", "Chuchote un compliment séduisant à l'oreille de la personne qui domine.", "Laisse la personne qui domine choisir où poser sa main sur toi pendant 10s.", "Retire un vêtement sur ordre (hors sous-vêtements).", "Laisse-toi guider par la main à travers la pièce, les yeux fermés.", "Demande la permission avant d'embrasser la personne qui domine."]
+      "dare": [
+        "Appelle la personne qui domine \"Maître/Maîtresse\" pendant 3 tours.",
+        "Reste à genoux devant la personne qui domine pendant 1 minute.",
+        "Embrasse la main de la personne qui domine.",
+        "Masse les épaules de la personne qui domine de façon sensuelle pendant 2 min.",
+        "Attends debout, immobile, que la personne qui domine te touche la joue.",
+        "Chuchote un compliment séduisant à l'oreille de la personne qui domine.",
+        "Laisse la personne qui domine choisir où poser sa main sur toi pendant 10s.",
+        "Retire un vêtement sur ordre (hors sous-vêtements).",
+        "Laisse-toi guider par la main à travers la pièce, les yeux fermés.",
+        "Demande la permission avant d'embrasser la personne qui domine."
+      ]
     },
     "dom_sexy2": {
-      "dare": ["Reste à genoux devant la personne qui domine pendant 2 tours.", "Laisse la personne qui domine te bander les yeux et te caresser le bras 30s.", "Embrasse le cou de la personne qui domine sur ordre.", "Retire deux vêtements sur ordre (hors sous-vêtements).", "Laisse la personne qui domine diriger un baiser sans y participer activement.", "Reste immobile pendant que la personne qui domine trace un chemin sur ta peau avec un doigt.", "Demande la permission avant chaque geste pendant 2 tours (toucher, parler, bouger).", "Sers de coussin humain : la personne qui domine s'appuie sur toi pendant 1 tour.", "Laisse-toi murmurer un ordre à l'oreille et exécute-le immédiatement.", "Accepte un surnom coquin choisi par la personne qui domine pour le reste de la partie."]
+      "dare": [
+        "Reste à genoux devant la personne qui domine pendant 2 tours.",
+        "Laisse la personne qui domine te bander les yeux et te caresser le bras 30s.",
+        "Embrasse le cou de la personne qui domine sur ordre.",
+        "Retire deux vêtements sur ordre (hors sous-vêtements).",
+        "Laisse la personne qui domine diriger un baiser sans y participer activement.",
+        "Reste immobile pendant que la personne qui domine trace un chemin sur ta peau avec un doigt.",
+        "Demande la permission avant chaque geste pendant 2 tours (toucher, parler, bouger).",
+        "Sers de coussin humain : la personne qui domine s'appuie sur toi pendant 1 tour.",
+        "Laisse-toi murmurer un ordre à l'oreille et exécute-le immédiatement.",
+        "Accepte un surnom coquin choisi par la personne qui domine pour le reste de la partie."
+      ]
     },
     "dom_sexy3": {
-      "dare": ["Reste à genoux devant la personne qui domine pendant toute la durée d'un tour complet.", "Laisse-toi bander les yeux et caresser pendant 1 minute par la personne qui domine.", "Reste en sous-vêtements pour le reste de la manche sur ordre.", "Exécute un ordre sensuel choisi entièrement par la personne qui domine (danse, pose, geste).", "Laisse la personne qui domine choisir un endroit précis à embrasser sur toi.", "Demande la permission pour absolument tout pendant le reste de la manche (parler, bouger, toucher).", "Accepte de rester silencieux et de communiquer uniquement par gestes pendant 3 tours.", "Laisse la personne qui domine t'attacher symboliquement les mains avec un vêtement pendant 1 tour.", "Exécute un gage sensuel intense choisi par le groupe (ex : lap dance, mime explicite).", "Accepte d'obéir sans réserve au prochain ordre de la personne qui domine, quel qu'il soit (dans le respect du consentement mutuel)."]
+      "dare": [
+        "Reste à genoux devant la personne qui domine pendant toute la durée d'un tour complet.",
+        "Laisse-toi bander les yeux et caresser pendant 1 minute par la personne qui domine.",
+        "Reste en sous-vêtements pour le reste de la manche sur ordre.",
+        "Exécute un ordre sensuel choisi entièrement par la personne qui domine (danse, pose, geste).",
+        "Laisse la personne qui domine choisir un endroit précis à embrasser sur toi.",
+        "Demande la permission pour absolument tout pendant le reste de la manche (parler, bouger, toucher).",
+        "Accepte de rester silencieux et de communiquer uniquement par gestes pendant 3 tours.",
+        "Laisse la personne qui domine t'attacher symboliquement les mains avec un vêtement pendant 1 tour.",
+        "Exécute un gage sensuel intense choisi par le groupe (ex : lap dance, mime explicite).",
+        "Accepte d'obéir sans réserve au prochain ordre de la personne qui domine, quel qu'il soit (dans le respect du consentement mutuel)."
+      ]
+    },
+    "dom_remote_nonsexy1": {
+      "dare": [
+        "Envoie une photo de ton plus beau sourire.",
+        "Envoie une vidéo de toi disant \"Oui Maître/Maîtresse\" à voix haute.",
+        "Envoie une photo de l'endroit où tu te trouves actuellement.",
+        "Envoie une vidéo de toi faisant une danse improvisée de 5 secondes.",
+        "Envoie une photo de tes chaussures du jour.",
+        "Envoie une vidéo où tu chantes le refrain de ta chanson préférée.",
+        "Envoie une photo de ton repas ou boisson actuel.",
+        "Envoie une vidéo de toi faisant un compliment à la caméra.",
+        "Envoie une photo de ta main levée en signe de salut.",
+        "Envoie une vidéo de 5 secondes où tu dis merci à la personne qui domine.",
+        "Envoie une photo de ton bureau ou espace de travail.",
+        "Envoie une vidéo où tu claques des doigts en rythme pendant 5 secondes.",
+        "Envoie une photo de ta boisson préférée du moment.",
+        "Envoie une vidéo où tu fais un clin d'œil à la caméra.",
+        "Envoie une photo de ton ciel actuel (vue par la fenêtre).",
+        "Envoie une vidéo de toi en train de bâiller de façon exagérée.",
+        "Envoie une photo de ta main avec les doigts croisés.",
+        "Envoie une vidéo où tu dis ton juron préféré (soft).",
+        "Envoie une photo de ton animal de compagnie ou d'une peluche.",
+        "Envoie une vidéo de 5 secondes où tu applaudis pour la personne qui domine."
+      ]
+    },
+    "dom_remote_nonsexy2": {
+      "dare": [
+        "Envoie une photo de toi faisant une pompe.",
+        "Envoie une vidéo de toi à genoux, en train de dire \"à vos ordres\".",
+        "Envoie une photo de ta tenue complète du jour.",
+        "Envoie une vidéo de toi dansant pendant 10 secondes sur ordre.",
+        "Envoie une photo de toi avec les yeux fermés.",
+        "Envoie une vidéo où tu imites un animal pendant 5 secondes.",
+        "Envoie une photo de ton reflet dans un miroir.",
+        "Envoie une vidéo de toi en train de réciter l'alphabet à l'envers.",
+        "Envoie une photo de toi avec un objet en équilibre sur la tête.",
+        "Envoie une vidéo de 10 secondes où tu obéis à un ordre donné par la personne qui domine.",
+        "Envoie une photo de toi en position de yoga improvisée.",
+        "Envoie une vidéo où tu marches à quatre pattes pendant 5 secondes.",
+        "Envoie une photo de toi avec la langue tirée.",
+        "Envoie une vidéo de toi en train de faire le poirier (ou d'essayer).",
+        "Envoie une photo de toi debout sur un pied.",
+        "Envoie une vidéo où tu imites la personne qui domine.",
+        "Envoie une photo de toi tenant un objet insolite trouvé dans la pièce.",
+        "Envoie une vidéo de toi chantant a capella pendant 10 secondes.",
+        "Envoie une photo de toi les bras croisés, regard sérieux.",
+        "Envoie une vidéo de 10 secondes où tu te déplaces en sautillant."
+      ]
+    },
+    "dom_remote_nonsexy3": {
+      "dare": [
+        "Envoie une vidéo de toi faisant 20 pompes.",
+        "Envoie une photo de toi à genoux, tête baissée.",
+        "Envoie une vidéo de toi en train d'exécuter un ordre humiliant mais non sexuel choisi par la personne qui domine.",
+        "Envoie une photo de toi habillé de façon ridicule sur demande.",
+        "Envoie une vidéo de 15 secondes où tu répètes une phrase imposée en boucle.",
+        "Envoie une photo de toi tenant une pancarte avec un message dicté par la personne qui domine.",
+        "Envoie une vidéo de toi en train de danser sans musique pendant 20 secondes.",
+        "Envoie une photo de toi les mains jointes en position de soumission.",
+        "Envoie une vidéo où tu demandes la permission avant chaque phrase pendant 30 secondes.",
+        "Envoie une vidéo de toi exécutant sans discuter le prochain ordre reçu par message.",
+        "Envoie une vidéo de toi en position de planche pendant 20 secondes.",
+        "Envoie une photo de toi allongé(e) au sol sur ordre.",
+        "Envoie une vidéo où tu récites un texte imposé sans rire.",
+        "Envoie une photo de toi habillé(e) avec des vêtements inversés (à l'envers).",
+        "Envoie une vidéo de 20 secondes où tu exécutes une série d'ordres donnés en direct par message.",
+        "Envoie une photo de toi tenant une pose inconfortable pendant que tu la prends.",
+        "Envoie une vidéo où tu marches en équilibre avec un livre sur la tête.",
+        "Envoie une photo de toi avec un accessoire ridicule imposé par la personne qui domine.",
+        "Envoie une vidéo de toi t'excusant de façon exagérée pour une faute imaginaire.",
+        "Envoie une vidéo de 30 secondes où tu obéis en silence à une série d'instructions reçues par message."
+      ]
+    },
+    "dom_remote_sexy1": {
+      "dare": [
+        "Envoie une photo de ton regard le plus séduisant.",
+        "Envoie une vidéo où tu envoies un baiser à la caméra.",
+        "Envoie une photo de toi mordillant ta lèvre.",
+        "Envoie une vidéo de 5 secondes où tu murmures un compliment.",
+        "Envoie une photo de ta tenue la plus flatteuse du moment.",
+        "Envoie une vidéo où tu passes une main dans tes cheveux lentement.",
+        "Envoie une photo de toi avec un sourire coquin.",
+        "Envoie une vidéo de toi disant \"j'ai envie de te voir\" à la caméra.",
+        "Envoie une photo de ton épaule dénudée.",
+        "Envoie une vidéo de 5 secondes où tu danses lentement sur ta chanson sensuelle préférée.",
+        "Envoie une photo de toi jouant avec une mèche de cheveux.",
+        "Envoie une vidéo où tu poses ta main sur ta clavicule lentement.",
+        "Envoie une photo de toi assis(e) de façon élégante.",
+        "Envoie une vidéo de 5 secondes où tu regardes la caméra en silence, intensément.",
+        "Envoie une photo de tes lèvres entrouvertes.",
+        "Envoie une vidéo où tu chuchotes le prénom de la personne qui domine.",
+        "Envoie une photo de toi avec un accessoire séduisant (bijou, écharpe...).",
+        "Envoie une vidéo de toi soufflant doucement vers la caméra.",
+        "Envoie une photo de ta nuque dégagée.",
+        "Envoie une vidéo de 5 secondes où tu souris timidement puis détournes le regard."
+      ]
+    },
+    "dom_remote_sexy2": {
+      "dare": [
+        "Envoie une photo de toi en sous-vêtements (cadré à ta convenance).",
+        "Envoie une vidéo où tu retires lentement un vêtement devant la caméra.",
+        "Envoie une photo de toi allongé(e), pose sensuelle.",
+        "Envoie une vidéo de 10 secondes où tu caresses ton propre bras lentement.",
+        "Envoie une photo de toi mordant un doigt avec un regard suggestif.",
+        "Envoie une vidéo où tu chuchotes un fantasme à voix basse.",
+        "Envoie une photo de toi de dos, tenue sexy.",
+        "Envoie une vidéo de toi soufflant un baiser en sous-vêtements.",
+        "Envoie une photo de ton reflet dans un miroir, pose de ton choix.",
+        "Envoie une vidéo de 10 secondes où tu danses de façon sensuelle en tenue légère.",
+        "Envoie une photo de toi assis(e) sur le bord du lit, pose suggestive.",
+        "Envoie une vidéo où tu détaches lentement tes cheveux devant la caméra.",
+        "Envoie une photo de toi avec une bretelle de vêtement qui glisse.",
+        "Envoie une vidéo de 10 secondes où tu te mords la lèvre en fixant la caméra.",
+        "Envoie une photo de ton ventre ou de tes hanches, cadrage à ta convenance.",
+        "Envoie une vidéo où tu passes lentement un glaçon sur ta peau.",
+        "Envoie une photo de toi en tenue de nuit.",
+        "Envoie une vidéo de toi t'étirant lentement devant la caméra.",
+        "Envoie une photo de toi avec les mains sur les hanches, regard de défi.",
+        "Envoie une vidéo de 10 secondes où tu chuchotes ce que tu portes actuellement."
+      ]
+    },
+    "dom_remote_sexy3": {
+      "dare": [
+        "Envoie une photo de toi entièrement en sous-vêtements, pose au choix.",
+        "Envoie une vidéo de 15 secondes où tu te déshabilles lentement (jusqu'aux sous-vêtements).",
+        "Envoie une photo de toi dans une position suggestive sur ton lit.",
+        "Envoie une vidéo où tu murmures ce que tu aimerais faire à la personne qui domine.",
+        "Envoie une photo de toi avec les mains liées symboliquement par un vêtement.",
+        "Envoie une vidéo de 15 secondes de danse sensuelle en sous-vêtements.",
+        "Envoie une photo de toi les yeux bandés, en tenue légère.",
+        "Envoie une vidéo où tu exécutes un ordre sensuel dicté par message.",
+        "Envoie une photo de toi dans la position que la personne qui domine choisit.",
+        "Envoie une vidéo de toi obéissant sans réserve au prochain ordre reçu, dans le respect du consentement mutuel.",
+        "Envoie une photo de toi de dos, entièrement en sous-vêtements.",
+        "Envoie une vidéo de 15 secondes où tu te caresses lentement les cuisses.",
+        "Envoie une photo de toi allongé(e) sur le ventre, pose suggestive.",
+        "Envoie une vidéo où tu murmures un ordre que tu aimerais recevoir.",
+        "Envoie une photo de toi avec un vêtement tenu entre les dents.",
+        "Envoie une vidéo de 15 secondes où tu te filmes en train de te déshabiller lentement, dos à la caméra.",
+        "Envoie une photo de toi les mains au-dessus de la tête, pose alanguie.",
+        "Envoie une vidéo où tu décris à voix basse ce que tu ressens actuellement.",
+        "Envoie une photo de toi dans le miroir, en sous-vêtements, regard direct.",
+        "Envoie une vidéo de toi acceptant sans un mot le prochain ordre reçu, dans le respect du consentement mutuel."
+      ]
     }
   },
   "en": {
     "friends": {
-      "truth": ["Your biggest cooking disaster?", "The worst fashion trend you followed?", "The last lie you told?", "Your worst habit when alone?", "Have you ever faked being sick?", "Your most useless purchase?", "A celebrity you think is overrated?", "Your guilty pleasure song?", "Have you ever snooped through someone's phone?", "Your most ridiculous fear?", "The worst gift you've ever received?", "If you swapped lives with a friend here, who would it be?", "Have you ever deleted a photo because it didn't get enough likes?", "Your worst first date?", "Your secret dream job?", "A message you sent to the wrong person?", "Your worst nickname?", "Your last Google search?", "The first silly thing you'd do if you won the lottery?", "Your biggest unconfessed secret?"],
-      "dare": ["Show your most embarrassing photo.", "Let the person next to you send an emoji to your last contact.", "Impersonate a celebrity until someone guesses who.", "Speak with a foreign accent for 2 rounds.", "Dance with no music for 1 minute.", "Touch your nose with your tongue.", "Tell a terrible joke or take a forfeit.", "Walk like a crab.", "Let the group style your hair.", "Sing a chorus at the top of your lungs.", "Do 15 push-ups right now.", "Describe the person next to you using only animal sounds.", "Keep your eyes closed for 1 round.", "Give everyone a specific compliment.", "Chug a glass of water in one go.", "Take everyone's drink order like a waiter.", "Show your screen time stats.", "Repeat everything the person next to you says for 1 round.", "Juggle 3 objects.", "Make a love declaration to an object in the room."]
+      "truth": [
+        "Your biggest cooking disaster?",
+        "The worst fashion trend you followed?",
+        "The last lie you told?",
+        "Your worst habit when alone?",
+        "Have you ever faked being sick?",
+        "Your most useless purchase?",
+        "A celebrity you think is overrated?",
+        "Your guilty pleasure song?",
+        "Have you ever snooped through someone's phone?",
+        "Your most ridiculous fear?",
+        "The worst gift you've ever received?",
+        "If you swapped lives with a friend here, who would it be?",
+        "Have you ever deleted a photo because it didn't get enough likes?",
+        "Your worst first date?",
+        "Your secret dream job?",
+        "A message you sent to the wrong person?",
+        "Your worst nickname?",
+        "Your last Google search?",
+        "The first silly thing you'd do if you won the lottery?",
+        "Your biggest unconfessed secret?"
+      ],
+      "dare": [
+        "Show your most embarrassing photo.",
+        "Let the person next to you send an emoji to your last contact.",
+        "Impersonate a celebrity until someone guesses who.",
+        "Speak with a foreign accent for 2 rounds.",
+        "Dance with no music for 1 minute.",
+        "Touch your nose with your tongue.",
+        "Tell a terrible joke or take a forfeit.",
+        "Walk like a crab.",
+        "Let the group style your hair.",
+        "Sing a chorus at the top of your lungs.",
+        "Do 15 push-ups right now.",
+        "Describe the person next to you using only animal sounds.",
+        "Keep your eyes closed for 1 round.",
+        "Give everyone a specific compliment.",
+        "Chug a glass of water in one go.",
+        "Take everyone's drink order like a waiter.",
+        "Show your screen time stats.",
+        "Repeat everything the person next to you says for 1 round.",
+        "Juggle 3 objects.",
+        "Make a love declaration to an object in the room."
+      ]
     },
     "hot1": {
-      "truth": ["Your most memorable first kiss?", "Which body part do you love touching most?", "A compliment that makes you blush?", "Your favorite piece of clothing on someone else?", "Your ideal romantic date?", "A scent that turns you on?", "Have you ever had love at first sight?", "Gentleness or confidence to seduce someone?", "Your take on lingering eye contact?", "A harmless sensual secret?", "Your very first fantasy?", "An underrated sensitive spot?", "The sexiest movie you've seen?", "Your opinion on foreplay?", "Sleep naked or dressed?", "Your favorite kind of kiss (neck, lips...)?", "A cute couple habit?", "Have you ever written a love letter?", "Your favorite season for staying in bed?", "Your sweetest memory?"],
-      "dare": ["Massage a player's shoulders for 2 minutes.", "Hold eye contact with the person next to you for 30s.", "Whisper a compliment in someone's ear.", "Hold a player's hand for 2 rounds.", "Give a 15s hug to anyone you choose.", "Describe your ideal partner with 5 sensual adjectives.", "Kiss the hand of the person next to you.", "Remove one item of clothing (underwear excluded).", "Stroke the hair of the person next to you.", "Trace a letter on a player's back for them to guess.", "Share a drink from the same glass with someone.", "Do a seductive walk across the room.", "Give an intense, mysterious look to someone.", "Give a butterfly kiss on someone's cheek.", "Rest your head on a player's shoulder for 1 round.", "Take off your socks elegantly.", "Do a 15s sensual dance.", "Trace an ice cube along a player's arm.", "Tell someone why you find them attractive.", "Share one of your seduction secrets."]
+      "truth": [
+        "Your most memorable first kiss?",
+        "Which body part do you love touching most?",
+        "A compliment that makes you blush?",
+        "Your favorite piece of clothing on someone else?",
+        "Your ideal romantic date?",
+        "A scent that turns you on?",
+        "Have you ever had love at first sight?",
+        "Gentleness or confidence to seduce someone?",
+        "Your take on lingering eye contact?",
+        "A harmless sensual secret?",
+        "Your very first fantasy?",
+        "An underrated sensitive spot?",
+        "The sexiest movie you've seen?",
+        "Your opinion on foreplay?",
+        "Sleep naked or dressed?",
+        "Your favorite kind of kiss (neck, lips...)?",
+        "A cute couple habit?",
+        "Have you ever written a love letter?",
+        "Your favorite season for staying in bed?",
+        "Your sweetest memory?"
+      ],
+      "dare": [
+        "Massage a player's shoulders for 2 minutes.",
+        "Hold eye contact with the person next to you for 30s.",
+        "Whisper a compliment in someone's ear.",
+        "Hold a player's hand for 2 rounds.",
+        "Give a 15s hug to anyone you choose.",
+        "Describe your ideal partner with 5 sensual adjectives.",
+        "Kiss the hand of the person next to you.",
+        "Remove one item of clothing (underwear excluded).",
+        "Stroke the hair of the person next to you.",
+        "Trace a letter on a player's back for them to guess.",
+        "Share a drink from the same glass with someone.",
+        "Do a seductive walk across the room.",
+        "Give an intense, mysterious look to someone.",
+        "Give a butterfly kiss on someone's cheek.",
+        "Rest your head on a player's shoulder for 1 round.",
+        "Take off your socks elegantly.",
+        "Do a 15s sensual dance.",
+        "Trace an ice cube along a player's arm.",
+        "Tell someone why you find them attractive.",
+        "Share one of your seduction secrets."
+      ]
     },
     "hot2": {
-      "truth": ["The most unusual place you've kissed someone?", "A secret attraction to someone in this room?", "Your favorite type of underwear?", "Your fantasy about flirting in public?", "The worst suggestive text you've sent?", "Your most passionate kiss?", "Lead or be led?", "Kiss on the first date, yes or no?", "The boldest thing you've sent by text?", "Have you ever stalked an ex online?", "The outfit that makes you feel irresistible?", "An intimate guilty pleasure?", "Your favorite foreplay to give?", "Have you ever faked or exaggerated pleasure?", "The best time of day for an intimate moment?", "Which part of you do you love having gently touched?", "Ever had a thought about a coworker?", "Your golden rule in bed?", "A fantasy involving a stranger?", "Your go-to fallback move?"],
-      "dare": ["Whisper a suggestive line to someone.", "Kiss a player's neck for 5s.", "Remove someone's socks using only one hand.", "Gently brush the thigh of the person next to you.", "Sit as close as possible to a player.", "Kiss someone near the lips.", "Unbutton one piece of clothing on your neighbor.", "Feed someone in a sensual way.", "Remove one item of clothing dramatically.", "Give a charming wink to the person across from you.", "Write a naughty text (without sending it).", "Caress someone's neck under their clothing for 10s.", "Touch someone's lips with your index finger.", "Give a hug from behind for 10s.", "Describe a player's outfit with passion.", "Sit on someone's lap for 1 round.", "Lick or nibble an earlobe.", "Mime your favorite position.", "Trace a path with your finger along someone's arm.", "Give a sensual hand massage."]
+      "truth": [
+        "The most unusual place you've kissed someone?",
+        "A secret attraction to someone in this room?",
+        "Your favorite type of underwear?",
+        "Your fantasy about flirting in public?",
+        "The worst suggestive text you've sent?",
+        "Your most passionate kiss?",
+        "Lead or be led?",
+        "Kiss on the first date, yes or no?",
+        "The boldest thing you've sent by text?",
+        "Have you ever stalked an ex online?",
+        "The outfit that makes you feel irresistible?",
+        "An intimate guilty pleasure?",
+        "Your favorite foreplay to give?",
+        "Have you ever faked or exaggerated pleasure?",
+        "The best time of day for an intimate moment?",
+        "Which part of you do you love having gently touched?",
+        "Ever had a thought about a coworker?",
+        "Your golden rule in bed?",
+        "A fantasy involving a stranger?",
+        "Your go-to fallback move?"
+      ],
+      "dare": [
+        "Whisper a suggestive line to someone.",
+        "Kiss a player's neck for 5s.",
+        "Remove someone's socks using only one hand.",
+        "Gently brush the thigh of the person next to you.",
+        "Sit as close as possible to a player.",
+        "Kiss someone near the lips.",
+        "Unbutton one piece of clothing on your neighbor.",
+        "Feed someone in a sensual way.",
+        "Remove one item of clothing dramatically.",
+        "Give a charming wink to the person across from you.",
+        "Write a naughty text (without sending it).",
+        "Caress someone's neck under their clothing for 10s.",
+        "Touch someone's lips with your index finger.",
+        "Give a hug from behind for 10s.",
+        "Describe a player's outfit with passion.",
+        "Sit on someone's lap for 1 round.",
+        "Lick or nibble an earlobe.",
+        "Mime your favorite position.",
+        "Trace a path with your finger along someone's arm.",
+        "Give a sensual hand massage."
+      ]
     },
     "hot3": {
-      "truth": ["The riskiest place you've had an intimate moment?", "Your unconfessed fantasy?", "Your absolute favorite position?", "Have you ever filmed yourself having sex?", "Your opinion on sex toys?", "Have you ever had sex outdoors?", "A roleplay you've tried?", "Your worst memory in bed?", "Give or receive?", "The wildest thing you've tried?", "Have you had an intimate thought about a friend here?", "Your ideal frequency?", "Have you ever sent a nude?", "A memorable erotic movie?", "How open are you to trying new things?", "Your most memorable one-night stand?", "A sensation that turns you on instantly?", "Your ideal scenario?", "An instant regret after doing something?", "Your most taboo topic?"],
-      "dare": ["Give a 20s lap dance of your choice.", "Remove two items of clothing.", "Imitate a pleasure sound for 5s.", "Put your hand under a player's clothing for 15s.", "French kiss for 5s.", "Give a sensual thigh massage.", "Describe your last intimate moment using cooking metaphors.", "Unbutton something using only your teeth.", "Lick someone's neck or shoulder.", "Blindfold yourself and let someone touch you for 30s.", "Do a sensual mime on a pillow.", "Remove an item of clothing from another player.", "Kiss someone's belly button.", "Take off your socks using only your teeth.", "Let someone draw on your bare skin.", "Stay in your underwear for 3 rounds.", "Say what turns you on about the person across from you.", "Give a 1-minute foot massage.", "Kiss someone on the lower back.", "Give an intimate caress (with consent)."]
+      "truth": [
+        "The riskiest place you've had an intimate moment?",
+        "Your unconfessed fantasy?",
+        "Your absolute favorite position?",
+        "Have you ever filmed yourself having sex?",
+        "Your opinion on sex toys?",
+        "Have you ever had sex outdoors?",
+        "A roleplay you've tried?",
+        "Your worst memory in bed?",
+        "Give or receive?",
+        "The wildest thing you've tried?",
+        "Have you had an intimate thought about a friend here?",
+        "Your ideal frequency?",
+        "Have you ever sent a nude?",
+        "A memorable erotic movie?",
+        "How open are you to trying new things?",
+        "Your most memorable one-night stand?",
+        "A sensation that turns you on instantly?",
+        "Your ideal scenario?",
+        "An instant regret after doing something?",
+        "Your most taboo topic?"
+      ],
+      "dare": [
+        "Give a 20s lap dance of your choice.",
+        "Remove two items of clothing.",
+        "Imitate a pleasure sound for 5s.",
+        "Put your hand under a player's clothing for 15s.",
+        "French kiss for 5s.",
+        "Give a sensual thigh massage.",
+        "Describe your last intimate moment using cooking metaphors.",
+        "Unbutton something using only your teeth.",
+        "Lick someone's neck or shoulder.",
+        "Blindfold yourself and let someone touch you for 30s.",
+        "Do a sensual mime on a pillow.",
+        "Remove an item of clothing from another player.",
+        "Kiss someone's belly button.",
+        "Take off your socks using only your teeth.",
+        "Let someone draw on your bare skin.",
+        "Stay in your underwear for 3 rounds.",
+        "Say what turns you on about the person across from you.",
+        "Give a 1-minute foot massage.",
+        "Kiss someone on the lower back.",
+        "Give an intimate caress (with consent)."
+      ]
     },
     "dom_nonsexy1": {
-      "dare": ["Bring a drink to the person in charge.", "Stay on your knees for 1 minute.", "Call the person in charge \"Master/Mistress\" for 3 rounds.", "Give a sincere compliment to the person in charge.", "Carry out a simple order without questioning it (e.g. fetch an object).", "Stay silent for 2 rounds unless spoken to.", "Massage the shoulders of the person in charge for 1 minute.", "Put away an object chosen by the person in charge.", "Stand up straight, back straight, for one full round.", "Ask permission before taking a sip of your drink."]
+      "dare": [
+        "Bring a drink to the person in charge.",
+        "Stay on your knees for 1 minute.",
+        "Call the person in charge \"Master/Mistress\" for 3 rounds.",
+        "Give a sincere compliment to the person in charge.",
+        "Carry out a simple order without questioning it (e.g. fetch an object).",
+        "Stay silent for 2 rounds unless spoken to.",
+        "Massage the shoulders of the person in charge for 1 minute.",
+        "Put away an object chosen by the person in charge.",
+        "Stand up straight, back straight, for one full round.",
+        "Ask permission before taking a sip of your drink."
+      ]
     },
     "dom_nonsexy2": {
-      "dare": ["Stay on your knees for 3 full rounds.", "Do 10 push-ups on command.", "Let the person in charge pick your next sentence to say out loud.", "Serve as a \"table\": stay on all fours for 1 minute while a glass is placed on your back.", "Repeat a sentence given by the person in charge, 5 times in a row.", "Wear a blindfold for 2 rounds.", "Obey a clothing order (e.g. remove an accessory, put a shoe back on differently).", "Hold a given position perfectly still for 1 minute.", "Ask permission before every action for 2 rounds (speaking, drinking, moving).", "Let the person in charge give you a nickname for the rest of the game."]
+      "dare": [
+        "Stay on your knees for 3 full rounds.",
+        "Do 10 push-ups on command.",
+        "Let the person in charge pick your next sentence to say out loud.",
+        "Serve as a \"table\": stay on all fours for 1 minute while a glass is placed on your back.",
+        "Repeat a sentence given by the person in charge, 5 times in a row.",
+        "Wear a blindfold for 2 rounds.",
+        "Obey a clothing order (e.g. remove an accessory, put a shoe back on differently).",
+        "Hold a given position perfectly still for 1 minute.",
+        "Ask permission before every action for 2 rounds (speaking, drinking, moving).",
+        "Let the person in charge give you a nickname for the rest of the game."
+      ]
     },
     "dom_nonsexy3": {
-      "dare": ["Stay on your knees for an entire round of the whole group.", "Do 20 push-ups or an intense physical dare on command.", "Act as a personal servant for 3 rounds (fetching, tidying, obeying without question).", "Let the person in charge give you 3 orders in a row to carry out immediately.", "Stay silent and still for 5 minutes unless told otherwise.", "Be fully blindfolded and led around the room.", "Accept an uncomfortable physical dare chosen by the person in charge (e.g. balancing an object, holding a position).", "Ask permission for absolutely everything for the rest of the round (speaking, moving, drinking).", "Let the person in charge fully choose your next outfit or accessory for the evening.", "Agree to carry out a humiliating but non-sexual dare chosen by the group (e.g. walk like an animal, sing while kneeling)."]
+      "dare": [
+        "Stay on your knees for an entire round of the whole group.",
+        "Do 20 push-ups or an intense physical dare on command.",
+        "Act as a personal servant for 3 rounds (fetching, tidying, obeying without question).",
+        "Let the person in charge give you 3 orders in a row to carry out immediately.",
+        "Stay silent and still for 5 minutes unless told otherwise.",
+        "Be fully blindfolded and led around the room.",
+        "Accept an uncomfortable physical dare chosen by the person in charge (e.g. balancing an object, holding a position).",
+        "Ask permission for absolutely everything for the rest of the round (speaking, moving, drinking).",
+        "Let the person in charge fully choose your next outfit or accessory for the evening.",
+        "Agree to carry out a humiliating but non-sexual dare chosen by the group (e.g. walk like an animal, sing while kneeling)."
+      ]
     },
     "dom_sexy1": {
-      "dare": ["Call the person in charge \"Master/Mistress\" for 3 rounds.", "Kneel in front of the person in charge for 1 minute.", "Kiss the hand of the person in charge.", "Give the person in charge a sensual shoulder massage for 2 minutes.", "Stand still and wait for the person in charge to touch your cheek.", "Whisper a seductive compliment in the ear of the person in charge.", "Let the person in charge choose where to place their hand on you for 10s.", "Remove one item of clothing on command (underwear excluded).", "Let yourself be led by the hand across the room with your eyes closed.", "Ask permission before kissing the person in charge."]
+      "dare": [
+        "Call the person in charge \"Master/Mistress\" for 3 rounds.",
+        "Kneel in front of the person in charge for 1 minute.",
+        "Kiss the hand of the person in charge.",
+        "Give the person in charge a sensual shoulder massage for 2 minutes.",
+        "Stand still and wait for the person in charge to touch your cheek.",
+        "Whisper a seductive compliment in the ear of the person in charge.",
+        "Let the person in charge choose where to place their hand on you for 10s.",
+        "Remove one item of clothing on command (underwear excluded).",
+        "Let yourself be led by the hand across the room with your eyes closed.",
+        "Ask permission before kissing the person in charge."
+      ]
     },
     "dom_sexy2": {
-      "dare": ["Kneel in front of the person in charge for 2 rounds.", "Let the person in charge blindfold you and stroke your arm for 30s.", "Kiss the neck of the person in charge on command.", "Remove two items of clothing on command (underwear excluded).", "Let the person in charge lead a kiss without actively participating.", "Stay still while the person in charge traces a path on your skin with a finger.", "Ask permission before every gesture for 2 rounds (touching, speaking, moving).", "Serve as a human cushion: the person in charge leans on you for 1 round.", "Let a command be whispered in your ear and carry it out immediately.", "Accept a flirty nickname chosen by the person in charge for the rest of the game."]
+      "dare": [
+        "Kneel in front of the person in charge for 2 rounds.",
+        "Let the person in charge blindfold you and stroke your arm for 30s.",
+        "Kiss the neck of the person in charge on command.",
+        "Remove two items of clothing on command (underwear excluded).",
+        "Let the person in charge lead a kiss without actively participating.",
+        "Stay still while the person in charge traces a path on your skin with a finger.",
+        "Ask permission before every gesture for 2 rounds (touching, speaking, moving).",
+        "Serve as a human cushion: the person in charge leans on you for 1 round.",
+        "Let a command be whispered in your ear and carry it out immediately.",
+        "Accept a flirty nickname chosen by the person in charge for the rest of the game."
+      ]
     },
     "dom_sexy3": {
-      "dare": ["Kneel in front of the person in charge for an entire round.", "Be blindfolded and caressed for 1 minute by the person in charge.", "Stay in your underwear for the rest of the round on command.", "Carry out a sensual dare entirely chosen by the person in charge (dance, pose, gesture).", "Let the person in charge choose a specific spot on you to kiss.", "Ask permission for absolutely everything for the rest of the round (speaking, moving, touching).", "Agree to stay silent and communicate only through gestures for 3 rounds.", "Let the person in charge symbolically tie your hands with a piece of clothing for 1 round.", "Carry out an intense sensual dare chosen by the group (e.g. lap dance, explicit mime).", "Agree to obey the next order from the person in charge without reservation, whatever it is (within the bounds of mutual consent)."]
+      "dare": [
+        "Kneel in front of the person in charge for an entire round.",
+        "Be blindfolded and caressed for 1 minute by the person in charge.",
+        "Stay in your underwear for the rest of the round on command.",
+        "Carry out a sensual dare entirely chosen by the person in charge (dance, pose, gesture).",
+        "Let the person in charge choose a specific spot on you to kiss.",
+        "Ask permission for absolutely everything for the rest of the round (speaking, moving, touching).",
+        "Agree to stay silent and communicate only through gestures for 3 rounds.",
+        "Let the person in charge symbolically tie your hands with a piece of clothing for 1 round.",
+        "Carry out an intense sensual dare chosen by the group (e.g. lap dance, explicit mime).",
+        "Agree to obey the next order from the person in charge without reservation, whatever it is (within the bounds of mutual consent)."
+      ]
+    },
+    "dom_remote_nonsexy1": {
+      "dare": [
+        "Send a photo of your best smile.",
+        "Send a video of you saying \"Yes Master/Mistress\" out loud.",
+        "Send a photo of where you currently are.",
+        "Send a video of you doing a 5-second improvised dance.",
+        "Send a photo of today's shoes.",
+        "Send a video of you singing the chorus of your favorite song.",
+        "Send a photo of your current meal or drink.",
+        "Send a video of you giving a compliment to the camera.",
+        "Send a photo of your hand raised in a salute.",
+        "Send a 5-second video saying thank you to the person in charge.",
+        "Send a photo of your desk or workspace.",
+        "Send a video of you snapping your fingers to a beat for 5 seconds.",
+        "Send a photo of your favorite drink right now.",
+        "Send a video of you winking at the camera.",
+        "Send a photo of the sky outside your window right now.",
+        "Send a video of you yawning dramatically.",
+        "Send a photo of your hand with fingers crossed.",
+        "Send a video of you saying your favorite (mild) swear word.",
+        "Send a photo of your pet or a stuffed animal.",
+        "Send a 5-second video of you applauding for the person in charge."
+      ]
+    },
+    "dom_remote_nonsexy2": {
+      "dare": [
+        "Send a photo of you doing a push-up.",
+        "Send a video of you on your knees saying \"at your command\".",
+        "Send a photo of your full outfit today.",
+        "Send a video of you dancing for 10 seconds on command.",
+        "Send a photo of yourself with your eyes closed.",
+        "Send a video where you imitate an animal for 5 seconds.",
+        "Send a photo of your reflection in a mirror.",
+        "Send a video of you reciting the alphabet backwards.",
+        "Send a photo of you balancing an object on your head.",
+        "Send a 10-second video of you obeying an order given by the person in charge.",
+        "Send a photo of yourself in an improvised yoga pose.",
+        "Send a video of you crawling on all fours for 5 seconds.",
+        "Send a photo of yourself sticking your tongue out.",
+        "Send a video of you attempting a handstand.",
+        "Send a photo of you standing on one foot.",
+        "Send a video of you imitating the person in charge.",
+        "Send a photo of you holding an unusual object found in the room.",
+        "Send a video of you singing a cappella for 10 seconds.",
+        "Send a photo of yourself with arms crossed and a serious look.",
+        "Send a 10-second video of you hopping around."
+      ]
+    },
+    "dom_remote_nonsexy3": {
+      "dare": [
+        "Send a video of you doing 20 push-ups.",
+        "Send a photo of you kneeling, head down.",
+        "Send a video of you carrying out a humiliating but non-sexual order chosen by the person in charge.",
+        "Send a photo of yourself dressed ridiculously on request.",
+        "Send a 15-second video where you repeat a given sentence on a loop.",
+        "Send a photo of you holding a sign with a message dictated by the person in charge.",
+        "Send a video of you dancing with no music for 20 seconds.",
+        "Send a photo of you with your hands joined in a position of submission.",
+        "Send a video where you ask permission before every sentence for 30 seconds.",
+        "Send a video of you carrying out without question the next order received by message.",
+        "Send a video of you holding a plank position for 20 seconds.",
+        "Send a photo of yourself lying on the floor on command.",
+        "Send a video where you recite a given text without laughing.",
+        "Send a photo of yourself wearing your clothes inside out.",
+        "Send a 20-second video of you carrying out a series of orders given live by message.",
+        "Send a photo of yourself holding an uncomfortable pose as it's taken.",
+        "Send a video of you walking while balancing a book on your head.",
+        "Send a photo of yourself with a ridiculous accessory chosen by the person in charge.",
+        "Send a video of you apologizing dramatically for an imaginary mistake.",
+        "Send a 30-second video of you silently obeying a series of instructions received by message."
+      ]
+    },
+    "dom_remote_sexy1": {
+      "dare": [
+        "Send a photo of your most seductive look.",
+        "Send a video of you blowing a kiss to the camera.",
+        "Send a photo of you biting your lip.",
+        "Send a 5-second video where you whisper a compliment.",
+        "Send a photo of your most flattering outfit right now.",
+        "Send a video of you slowly running a hand through your hair.",
+        "Send a photo of yourself with a naughty smile.",
+        "Send a video of you saying \"I want to see you\" to the camera.",
+        "Send a photo of your bare shoulder.",
+        "Send a 5-second video of you slowly dancing to your favorite sensual song.",
+        "Send a photo of you playing with a strand of your hair.",
+        "Send a video of you slowly placing your hand on your collarbone.",
+        "Send a photo of yourself sitting elegantly.",
+        "Send a 5-second video where you stare intensely at the camera in silence.",
+        "Send a photo of your slightly parted lips.",
+        "Send a video of you whispering the name of the person in charge.",
+        "Send a photo of yourself with a seductive accessory (jewelry, scarf...).",
+        "Send a video of you gently blowing toward the camera.",
+        "Send a photo of your bare neck.",
+        "Send a 5-second video where you smile shyly then look away."
+      ]
+    },
+    "dom_remote_sexy2": {
+      "dare": [
+        "Send a photo of yourself in underwear (framed as you like).",
+        "Send a video of you slowly removing one item of clothing on camera.",
+        "Send a photo of yourself lying down in a sensual pose.",
+        "Send a 10-second video where you slowly stroke your own arm.",
+        "Send a photo of you biting a finger with a suggestive look.",
+        "Send a video where you whisper a fantasy in a low voice.",
+        "Send a photo of yourself from behind, in a sexy outfit.",
+        "Send a video of you blowing a kiss in your underwear.",
+        "Send a photo of your reflection in a mirror, in a pose of your choice.",
+        "Send a 10-second video of you dancing sensually in light clothing.",
+        "Send a photo of yourself sitting on the edge of the bed, suggestive pose.",
+        "Send a video of you slowly letting your hair down on camera.",
+        "Send a photo of yourself with a clothing strap slipping off your shoulder.",
+        "Send a 10-second video where you bite your lip while staring at the camera.",
+        "Send a photo of your stomach or hips, framed as you like.",
+        "Send a video of you slowly running an ice cube over your skin.",
+        "Send a photo of yourself in nightwear.",
+        "Send a video of you slowly stretching on camera.",
+        "Send a photo of yourself with your hands on your hips, a challenging look.",
+        "Send a 10-second video where you whisper what you're currently wearing."
+      ]
+    },
+    "dom_remote_sexy3": {
+      "dare": [
+        "Send a photo of yourself fully in underwear, pose of your choice.",
+        "Send a 15-second video where you slowly undress down to your underwear.",
+        "Send a photo of yourself in a suggestive position on your bed.",
+        "Send a video where you whisper what you'd like to do to the person in charge.",
+        "Send a photo of yourself with your hands symbolically tied with a piece of clothing.",
+        "Send a 15-second video of a sensual dance in your underwear.",
+        "Send a photo of yourself blindfolded, in light clothing.",
+        "Send a video of you carrying out a sensual order dictated by message.",
+        "Send a photo of yourself in the position chosen by the person in charge.",
+        "Send a video of you obeying without reservation the next order received, within the bounds of mutual consent.",
+        "Send a photo of yourself from behind, fully in underwear.",
+        "Send a 15-second video of you slowly caressing your own thighs.",
+        "Send a photo of yourself lying on your stomach, suggestive pose.",
+        "Send a video where you whisper an order you'd like to receive.",
+        "Send a photo of yourself holding a piece of clothing between your teeth.",
+        "Send a 15-second video of yourself slowly undressing, filmed from behind.",
+        "Send a photo of yourself with your hands above your head, a languid pose.",
+        "Send a video where you describe in a low voice what you're currently feeling.",
+        "Send a photo of yourself in the mirror, in underwear, direct gaze.",
+        "Send a video of you silently accepting the next order received, within the bounds of mutual consent."
+      ]
     }
   }
 }

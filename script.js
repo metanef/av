@@ -25,7 +25,9 @@ const translations = {
         modeHard: "HARD",
         dominationTitle: "Domination",
         dominationDesc: "Uniquement des gages, à ton service.",
-        domCatNonSexy: "Normal",
+        domLocInPerson: "Soirée",
+        domLocRemote: "À distance",
+        domCatNonSexy: "Non-sexy",
         domCatSexy: "Sexy",
         dareTitleDom: "GAGE",
         dareSubDom: "Obéis à l'ordre",
@@ -53,7 +55,9 @@ const translations = {
         modeHard: "HARD",
         dominationTitle: "Domination",
         dominationDesc: "Dares only, at your service.",
-        domCatNonSexy: "Normal",
+        domLocInPerson: "In person",
+        domLocRemote: "Remote",
+        domCatNonSexy: "Non-sexy",
         domCatSexy: "Sexy",
         dareTitleDom: "DARE",
         dareSubDom: "Obey the command",
@@ -85,6 +89,7 @@ let currentMode = null;
 let currentDifficulty = 1;
 let dominationCategory = 'nonsexy';
 let dominationDifficulty = 1;
+let dominationLocation = 'inperson';
 let currentLang = 'fr';
 let usedCards = { truth: [], dare: [] };
 let chart = null; // Chart.js instance
@@ -136,6 +141,19 @@ function updateDifficulty(val) {
     if (currentMode !== 'hot') setMode('hot');
 }
 
+function setDominationLocation(location) {
+    dominationLocation = location;
+    const inPersonBtn = document.getElementById('dom-loc-inperson');
+    const remoteBtn = document.getElementById('dom-loc-remote');
+    inPersonBtn.classList.toggle('bg-purple-500/20', location === 'inperson');
+    inPersonBtn.classList.toggle('text-white', location === 'inperson');
+    inPersonBtn.classList.toggle('text-purple-300/50', location !== 'inperson');
+    remoteBtn.classList.toggle('bg-purple-500/20', location === 'remote');
+    remoteBtn.classList.toggle('text-white', location === 'remote');
+    remoteBtn.classList.toggle('text-purple-300/50', location !== 'remote');
+    if (currentMode !== 'domination') setMode('domination');
+}
+
 function setDominationCategory(category) {
     dominationCategory = category;
     const nonSexyBtn = document.getElementById('dom-cat-nonsexy');
@@ -183,7 +201,8 @@ function initGame() {
         dareSubEl.innerText = t.dareSub;
     } else if (currentMode === 'domination') {
         const catLabel = dominationCategory === 'sexy' ? t.domCatSexy : t.domCatNonSexy;
-        indicator.innerText = `${catLabel.toUpperCase()} ${dominationDifficulty}`;
+        const locLabel = dominationLocation === 'remote' ? t.domLocRemote : t.domLocInPerson;
+        indicator.innerText = `${locLabel.toUpperCase()} · ${catLabel.toUpperCase()} ${dominationDifficulty}`;
         indicator.style.borderColor = 'rgba(168, 85, 247, 0.2)';
         indicator.style.color = '#c084fc';
         truthOption.classList.add('hidden');
@@ -202,7 +221,10 @@ function getActiveTypes() {
 function getPoolKey() {
     if (currentMode === 'friends') return 'friends';
     if (currentMode === 'hot') return `hot${currentDifficulty}`;
-    if (currentMode === 'domination') return `dom_${dominationCategory}${dominationDifficulty}`;
+    if (currentMode === 'domination') {
+        const prefix = dominationLocation === 'remote' ? 'dom_remote_' : 'dom_';
+        return `${prefix}${dominationCategory}${dominationDifficulty}`;
+    }
 }
 
 function drawCard(type) {
@@ -309,6 +331,7 @@ function updateChart() {
 
 window.setMode = setMode;
 window.updateDifficulty = updateDifficulty;
+window.setDominationLocation = setDominationLocation;
 window.setDominationCategory = setDominationCategory;
 window.updateDominationDifficulty = updateDominationDifficulty;
 window.initGame = initGame;
